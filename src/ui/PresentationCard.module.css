@@ -1,0 +1,11 @@
+.cardContainer {
+  background-color: rgba(208, 154, 87, 0.17);
+
+  border-radius: 2rem;
+  outline: 1rem dotted rgba(208, 154, 87, 0.17);
+}
+
+.header,
+.text {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.267);
+}
