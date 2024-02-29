@@ -8,7 +8,9 @@ function FirstPage() {
     <div>
       <Home />
       <PresentationCard />
-      <WhoAmI />
+      <div id="section-about">
+        <WhoAmI />
+      </div>
       <Hobbies />
     </div>
   );

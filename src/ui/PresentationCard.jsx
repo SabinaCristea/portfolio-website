@@ -24,7 +24,7 @@ function PresentationCard() {
                 alt="SVG Image"
                 className={styles.btnIcon}
               />
-              Find me on Github
+              Find me on GitHub
             </Button>
             <Button url="https://www.linkedin.com/in/sabina-cristea/">
               <img
