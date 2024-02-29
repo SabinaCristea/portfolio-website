@@ -1,0 +1,44 @@
+.btn {
+  border-radius: 100rem;
+
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  background-color: #6d6b18;
+  color: #f0efec;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: none;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: #6d6b184d;
+}

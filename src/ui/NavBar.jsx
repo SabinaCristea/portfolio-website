@@ -42,7 +42,6 @@ function NavBar() {
                       y="-2.4"
                       height="28.799999"
                       fillOpacity="0.28"
-                      className={styles.aaa}
                     />
                   </g>
                 </mask>
