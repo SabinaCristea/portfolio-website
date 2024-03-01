@@ -5,7 +5,7 @@ function PresentationCard() {
   return (
     <div className="mt-[3rem] flex align-middle justify-center">
       <div
-        className={`${styles.cardContainer} max-w-[100rem] flex justify-between pr-20 pl-24 pb-24 pt-8`}
+        className={`${styles.cardContainer} max-w-[110rem] flex justify-between pr-20 pl-24 pb-24 pt-8`}
       >
         <div className="flex flex-col self-end gap-16 ">
           <div className=" flex flex-col gap-8">

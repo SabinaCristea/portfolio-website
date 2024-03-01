@@ -1,0 +1,25 @@
+.hobbiesContainer {
+  max-width: 110rem;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.plantImg {
+  position: absolute;
+  top: -43rem;
+  right: -15rem;
+  width: 40rem;
+}
+
+.header,
+blockquote {
+  text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.267);
+}
+
+.coffeeGirlImg {
+  position: absolute;
+  bottom: 0;
+  right: -15rem;
+}

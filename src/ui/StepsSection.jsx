@@ -19,10 +19,10 @@ function StepsSection() {
           />
         </div>
         <div className={styles.image1}>
-          <img src="src/assets/plant-1.png" alt="Right Image" />
+          <img src="src/assets/plant-1.png" alt="Right Image 1" />
         </div>
         <div className={styles.image2}>
-          <img src="src/assets/plant-2.png" alt="Left Image" />
+          <img src="src/assets/plant-2.png" alt="Left Image 1" />
         </div>
         <div className={styles.stepIcon}>
           <img src="src/assets/biotech.svg" alt="Biotech icon" width="80%" />
@@ -65,10 +65,10 @@ function StepsSection() {
           <img src="src/assets/books.svg" alt="Books icon" width="75%" />
         </div>
         <div className={styles.image3}>
-          <img src="src/assets/plant-3.png" alt="Left Image" />
+          <img src="src/assets/plant-3.png" alt="Right Image 2" />
         </div>
         <div className={styles.image4}>
-          <img src="src/assets/plant-4.png" alt="Left Image" />
+          <img src="src/assets/plant-4.png" alt="Left Image 2" />
         </div>
         <div className={styles.stepIcon}>
           <img src="src/assets/sprout.svg" alt="Plant icon" width="80%" />
