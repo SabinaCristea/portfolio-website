@@ -1,3 +1,4 @@
+import { GITHUB_ACCOUNT, LINKEDIN_ACCOUNT } from "../utils/accounts";
 import Button from "./Button";
 import styles from "./PresentationCard.module.css";
 
@@ -5,20 +6,20 @@ function PresentationCard() {
   return (
     <div className="mt-[3rem] flex align-middle justify-center">
       <div
-        className={`${styles.cardContainer} max-w-[110rem] flex justify-between pr-20 pl-24 pb-24 pt-8`}
+        className={`${styles.cardContainer} max-w-[110rem] flex justify-between pr-28 pl-28 pb-24 pt-8`}
       >
         <div className="flex flex-col self-end gap-16 ">
-          <div className=" flex flex-col gap-8">
+          <div className=" flex flex-col gap-[4rem]">
             <header className={` ${styles.header} text-[5rem]`}>
               What it means to me
             </header>
-            <p className={`${styles.text} text-[3rem] max-w-[50rem]`}>
+            <p className={`${styles.text} text-[3.5rem] max-w-[55rem]`}>
               Frontend development is the art of balance: blending aesthetics
               with functionality, elegance with efficiency.
             </p>
           </div>
           <div className="flex justify-between">
-            <Button url="https://github.com/SabinaCristea">
+            <Button url={GITHUB_ACCOUNT}>
               <img
                 src="src/assets/icons8-github.svg"
                 alt="SVG Image"
@@ -26,7 +27,7 @@ function PresentationCard() {
               />
               Find me on GitHub
             </Button>
-            <Button url="https://www.linkedin.com/in/sabina-cristea/">
+            <Button url={LINKEDIN_ACCOUNT}>
               <img
                 src="src/assets/icons8-linkedin.svg"
                 alt="SVG Image"

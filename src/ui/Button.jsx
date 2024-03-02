@@ -8,7 +8,7 @@ function Button({ url, children }) {
       to={url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${styles.btn} flex items-center tracking-wider px-8 py-0.5`}
+      className={`${styles.btn} flex items-center tracking-wider px-10 py-0.5`}
     >
       {children}
     </Link>
