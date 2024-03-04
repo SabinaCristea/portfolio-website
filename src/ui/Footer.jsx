@@ -4,7 +4,6 @@ import {
   INSTAGRAM_ACCOUNT,
   LINKEDIN_ACCOUNT,
 } from "../utils/accounts";
-import styles from "./Footer.module.css";
 
 function Footer() {
   return (

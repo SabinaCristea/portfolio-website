@@ -1,0 +1,14 @@
+.hardSkillsContainer {
+  background-color: #ebe0d3;
+
+  border-radius: 3rem;
+
+  padding-bottom: 5rem;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-size: 2rem;
+
+  text-align: center;
+}
