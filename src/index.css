@@ -23,6 +23,8 @@ body {
   font-size: 1.6rem;
   color: #0a0b0a;
   background-color: #f0efec;
+
+  overflow-x: hidden;
 }
 
 .loader {

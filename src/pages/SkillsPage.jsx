@@ -1,28 +1,22 @@
-import { useEffect, useState } from "react";
-import Skills from "../pages/Skills";
+import SkillsSlider from "../ui/SkillsSlider";
 
 function SkillsPage() {
-  const [skillsData, setSkillsData] = useState([]);
-
-  useEffect(() => {
-    // Define a function to fetch data
-    const fetchData = async () => {
-      try {
-        const res = await fetch("./skillsData.json");
-        const data = await res.json();
-        setSkillsData(data);
-      } catch (error) {
-        console.error("Errooooooor:", error);
-      }
-    };
-    fetchData();
-  }, []);
-
   return (
-    <>
-      <Skills data={skillsData.hardSkills} headline="Expertise" />
-      <Skills data={skillsData.softSkills} headline="Soft Skills" />;
-    </>
+    <div className="flex flex-col items-center">
+      <header className="text-center mt-[8rem] text-[4rem] leading-[4.5rem]">
+        Welcome to my skill showcase, <br />
+        <span className="text-[3.5rem]">
+          where pixels meet precision and code finds its rhythm!
+        </span>
+      </header>
+      <SkillsSlider />
+      <img
+        src="src/assets/productive.png"
+        alt="Productive team illustration"
+        width="35%"
+        className="mb-[-1rem]"
+      />
+    </div>
   );
 }
 

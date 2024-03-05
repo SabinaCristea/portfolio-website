@@ -1,22 +1,21 @@
 import { useState } from "react";
 import SkillTab from "../ui/SkillTab";
-import styles from "./Skills.module.css";
+import SkillDetails from "../ui/SkillDetails";
 
 function Skills({ data, headline }) {
-  const [activeTabIndex, setActiveTabIndex] = useState(null);
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  // const activeSkill = data[activeTabIndex];
 
   function handleTabOpen(index) {
     setActiveTabIndex(index);
   }
 
-  if (!data || !Array.isArray(data)) {
-    return <div>No data available</div>;
-  }
-
   return (
-    <main className={`max-w-[110rem] mx-auto ${styles.hardSkillsContainer}`}>
-      <h2 className={styles.headline}>{headline}</h2>
-      <section className={`flex`}>
+    <div className="rounded-[3rem] bg-[#ebe0d3]">
+      <h2 className="uppercase text-[3rem] text-center py-4 border-b-[.2rem] border-[#f0efec] ">
+        {headline}
+      </h2>
+      <div className={`flex`}>
         {data.map((skill, index) => (
           <SkillTab
             key={index}
@@ -28,9 +27,26 @@ function Skills({ data, headline }) {
             {skill.name}
           </SkillTab>
         ))}
-      </section>
-      <section></section>
-    </main>
+      </div>
+      {data.map(
+        (skill, index) =>
+          activeTabIndex === index && (
+            <SkillDetails
+              key={index}
+              src={skill.src}
+              alt={skill.alt}
+              isActive={activeTabIndex === index}
+              details={skill.details}
+            />
+          )
+      )}
+      {/* <SkillDetails
+        src={activeSkill.src}
+        alt={activeSkill.alt}
+        isActive={true}
+        details={activeSkill.details}
+      /> */}
+    </div>
   );
 }
 

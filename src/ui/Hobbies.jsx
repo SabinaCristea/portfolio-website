@@ -5,13 +5,16 @@ function Hobbies() {
   return (
     <div>
       <div className="bg-[#d09a572b] pb-[25rem] pt-[7rem]">
-        <div className={`${styles.hobbiesContainer} flex flex-col text-center`}>
+        <div
+          className={`${styles.hobbiesContainer} flex flex-col text-center
+        `}
+        >
           <img
             src="src/assets/plant-5.png"
             alt="Photo of plant 5"
             className={styles.plantImg}
           />
-          <header className={`${styles.header} text-[5rem] pb-[10rem]`}>
+          <header className={`${styles.header} text-[5rem] pb-[10rem] `}>
             Activities that bring me joy
           </header>
           <div className="flex justify-between pb-[15rem]">
