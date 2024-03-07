@@ -6,7 +6,7 @@ function PresentationCard() {
   return (
     <div className="mt-[3rem] flex align-middle justify-center">
       <div
-        className={`${styles.cardContainer} max-w-[110rem] flex justify-between pr-28 pl-28 pb-24 pt-8`}
+        className={`${styles.cardContainer} w-[110rem] flex justify-between pr-28 pl-28 pb-24 pt-8`}
       >
         <div className="flex flex-col self-end gap-16 ">
           <div className=" flex flex-col gap-[4rem]">
@@ -40,7 +40,6 @@ function PresentationCard() {
         <img
           src="src/assets/me.png"
           alt="Photo of me"
-          width="35%"
           className="rounded-b-2xl "
         />
       </div>

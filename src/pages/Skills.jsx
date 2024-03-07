@@ -4,15 +4,15 @@ import SkillDetails from "../ui/SkillDetails";
 
 function Skills({ data, headline }) {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
-  // const activeSkill = data[activeTabIndex];
+  const activeSkill = data[activeTabIndex];
 
   function handleTabOpen(index) {
     setActiveTabIndex(index);
   }
 
   return (
-    <div className="rounded-[3rem] bg-[#ebe0d3]">
-      <h2 className="uppercase text-[3rem] text-center py-4 border-b-[.2rem] border-[#f0efec] ">
+    <div className="rounded-[3rem] bg-[--color-pink-secondary]">
+      <h2 className="uppercase text-[3rem] text-center py-4 border-b-[.2rem] border-[var(--color-pink-primary)] ">
         {headline}
       </h2>
       <div className={`flex`}>
@@ -28,7 +28,7 @@ function Skills({ data, headline }) {
           </SkillTab>
         ))}
       </div>
-      {data.map(
+      {/* {data.map(
         (skill, index) =>
           activeTabIndex === index && (
             <SkillDetails
@@ -39,13 +39,13 @@ function Skills({ data, headline }) {
               details={skill.details}
             />
           )
-      )}
-      {/* <SkillDetails
+      )} */}
+      <SkillDetails
         src={activeSkill.src}
         alt={activeSkill.alt}
         isActive={true}
         details={activeSkill.details}
-      /> */}
+      />
     </div>
   );
 }

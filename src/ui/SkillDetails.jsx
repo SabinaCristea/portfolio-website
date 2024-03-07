@@ -1,7 +1,7 @@
 function SkillDetails({ src, alt, details }) {
   return (
     <div
-      className="flex bg-[#ede7de] rounded-br-[3rem] rounded-bl-[3rem]
+      className="flex bg-[var(--color-pink-tertiary)] rounded-br-[3rem] rounded-bl-[3rem]
       px-[4rem]"
     >
       <div className="flex flex-col items-center px-[5rem] gap-8 text-center justify-center">

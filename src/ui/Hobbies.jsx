@@ -4,7 +4,7 @@ import styles from "./Hobbies.module.css";
 function Hobbies() {
   return (
     <div>
-      <div className="bg-[#d09a572b] pb-[25rem] pt-[7rem]">
+      <div className="bg-[var(--color-orange-transparent)] pb-[15rem] pt-[7rem]">
         <div
           className={`${styles.hobbiesContainer} flex flex-col text-center
         `}
@@ -21,7 +21,7 @@ function Hobbies() {
             <HobbyCard
               src="src/assets/reading.png"
               alt="Reading image"
-              bgColor="#a1b89b"
+              bgColor="var(--color-green-hobby-card)"
             >
               Diving into psychology and philosophy books, uncovering the depths
               of the mind and the mysteries of existence.
@@ -29,14 +29,14 @@ function Hobbies() {
             <HobbyCard
               src="src/assets/meditating.png"
               alt="Meditating image"
-              bgColor="#c3c4e1"
+              bgColor="var(--color-purple-hobby-card)"
             >
               Finding peace within the flow of breath and movement.
             </HobbyCard>
             <HobbyCard
               src="src/assets/hiking.png"
               alt="Hiking image"
-              bgColor="#dfb498"
+              bgColor="var(--color-cream-hobby-card)"
             >
               Exploring paths, finding peace in nature`s embrace, and gaining
               strength one step at a time.
@@ -48,11 +48,10 @@ function Hobbies() {
           <p className="text-[3rem]">- William Arthur Ward</p>
         </div>
       </div>
-      <div className={`${styles.emptyContainer} h-[20rem] relative`}>
+      <div className="h-[10rem] w-[110rem] relative mx-auto">
         <img
           src="src/assets/drinking-coffee.png"
           alt="Girl drinking coffee"
-          width="40%"
           className={styles.coffeeGirlImg}
         />
       </div>

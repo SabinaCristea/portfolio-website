@@ -1,10 +1,9 @@
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import Skills from "../pages/Skills";
 import styles from "./SkillsSlider.module.css";
 
 function SkillsSlider() {
-  // const queryClient = useQueryClient();
 
   const {
     data: skillsData,
@@ -19,26 +18,10 @@ function SkillsSlider() {
     },
   });
 
-  // queryClient.setQueryData("skillsData", skillsData);
-
-  // const [skillsData, setSkillsData] = useState([]);
   const [curSlide, setCurSlide] = useState(0);
   const [btnRightVisible, setBtnRightVisible] = useState(true);
   const [btnLeftVisible, setBtnLeftVisible] = useState(false);
   const maxSlide = 2;
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const res = await fetch("./skillsData.json");
-  //       const data = await res.json();
-  //       setSkillsData(data);
-  //     } catch (error) {
-  //       console.error("Errooooooor:", error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
 
   useEffect(() => {
     const handleKeyDown = (event) => {

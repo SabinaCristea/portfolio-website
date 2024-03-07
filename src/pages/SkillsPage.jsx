@@ -13,7 +13,6 @@ function SkillsPage() {
       <img
         src="src/assets/productive.png"
         alt="Productive team illustration"
-        width="35%"
         className="mb-[-1rem]"
       />
     </div>

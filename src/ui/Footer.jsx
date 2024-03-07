@@ -7,7 +7,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-[#d09a572b] pb-[2rem] pt-[2rem] px-[5rem] text-[1.3rem]">
+    <footer className="bg-[var(--color-orange-transparent)] pb-[2rem] pt-[2rem] px-[5rem] text-[1.3rem]">
       <div className="flex justify-between ">
         <p className="self-center">
           Copyright ©2024. <br /> Designed by Sabina Cristea

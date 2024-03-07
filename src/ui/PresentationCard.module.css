@@ -1,8 +1,8 @@
 .cardContainer {
-  background-color: rgba(208, 154, 87, 0.17);
+  background-color: var(--color-orange-transparent);
 
   border-radius: 2rem;
-  outline: 1rem dotted rgba(208, 154, 87, 0.17);
+  outline: 1rem dotted var(--color-orange-transparent);
 }
 
 .header,

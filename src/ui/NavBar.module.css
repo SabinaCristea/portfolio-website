@@ -20,13 +20,13 @@
   align-items: center;
   justify-content: center;
 
-  color: #0a0b0a;
+  color: var(--color-black);
 
   position: relative;
 }
 
 .navLink:hover {
-  color: #f0efec;
+  color: var(--color-pink-primary);
   filter: drop-shadow(0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 

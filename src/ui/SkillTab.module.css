@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #ebe0d3;
+  background-color: var(--color-pink-secondary);
 
   padding-left: 2rem;
   padding-right: 2rem;
@@ -17,5 +17,5 @@
 }
 
 .active {
-  background: #ede7de;
+  background: var(--color-pink-tertiary);
 }

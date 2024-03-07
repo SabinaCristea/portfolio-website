@@ -11,7 +11,7 @@
   transform: translateX(-50%);
   height: 88%;
   grid-column: 2;
-  border-left: 1rem dotted #6b6a1598;
+  border-left: 1rem dotted var(--color-green-transparent);
 
   z-index: 0;
 }
@@ -37,31 +37,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d09957;
+  background-color: var(--color-orange-steps);
 
   z-index: 999;
 }
 
 .image1 {
-  width: 80%;
+  width: 100%;
   margin-bottom: -18rem;
   margin-left: 10rem;
 }
 
 .image2 {
-  width: 80%;
+  width: 100%;
   margin-bottom: -39rem;
   margin-left: -17rem;
 }
 
 .image3 {
-  width: 90%;
+  width: 100%;
   margin-bottom: -15rem;
   margin-left: 8rem;
 }
 
 .image4 {
-  width: 90%;
+  width: 100%;
   margin-bottom: -14rem;
   margin-left: -5rem;
 }

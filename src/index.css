@@ -4,6 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-pink-primary: #f0efec;
+  --color-pink-secondary: #ebe0d3;
+  --color-pink-tertiary: #ede7de;
+  --color-green: #6d6b18;
+  --color-green-transparent: #6b6a1598;
+  --color-green-transparent-btn: #6d6b184d;
+  --color-orange-steps: #d09957;
+  --color-orange-transparent: #d09a572b;
+  --color-green-hobby-card: #a1b89b;
+  --color-purple-hobby-card: #c3c4e1;
+  --color-cream-hobby-card: #dfb498;
+  --color-black: #0a0b0a;
+}
+
 *,
 *::before,
 *::after {
@@ -21,8 +36,8 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
-  color: #0a0b0a;
-  background-color: #f0efec;
+  color: var(--color-black);
+  background-color: var(--color-pink-primary);
 
   overflow-x: hidden;
 }
