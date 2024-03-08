@@ -19,7 +19,7 @@ function PresentationCard() {
             </p>
           </div>
           <div className="flex justify-between">
-            <Button url={GITHUB_ACCOUNT}>
+            <Button to={GITHUB_ACCOUNT}>
               <img
                 src="src/assets/icons8-github.svg"
                 alt="SVG Image"
@@ -27,7 +27,7 @@ function PresentationCard() {
               />
               Find me on GitHub
             </Button>
-            <Button url={LINKEDIN_ACCOUNT}>
+            <Button to={LINKEDIN_ACCOUNT}>
               <img
                 src="src/assets/icons8-linkedin.svg"
                 alt="SVG Image"

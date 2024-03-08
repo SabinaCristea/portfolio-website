@@ -2,20 +2,16 @@ import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import Skills from "../pages/Skills";
 import styles from "./SkillsSlider.module.css";
+import { getData } from "../utils/getData";
 
 function SkillsSlider() {
-
   const {
     data: skillsData,
     isLoading,
     error,
   } = useQuery({
     queryKey: ["skillsData"],
-    queryFn: async () => {
-      const res = await fetch("./skillsData.json");
-      const data = await res.json();
-      return data;
-    },
+    queryFn: getData,
   });
 
   const [curSlide, setCurSlide] = useState(0);

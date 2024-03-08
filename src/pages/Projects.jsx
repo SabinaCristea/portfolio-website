@@ -1,5 +1,33 @@
+import ProjectsCarousel from "../ui/ProjectsCarousel";
+import Button from "../ui/Button";
+import Modal from "../ui/Modal";
+import { useState } from "react";
+
 function Projects() {
-  return <div>projects</div>;
+  const [btnClicked, setBtnClicked] = useState(false);
+
+  function handleShowModal() {
+    setBtnClicked(() => !btnClicked);
+  }
+
+  return (
+    <div className="flex flex-col items-center relative h-[100rem] mt-[8rem]">
+      <header className="text-[4rem] drop-shadow-3xl">
+        Explore My Projects
+      </header>
+      <ProjectsCarousel />
+      <Button onClick={handleShowModal}>CLICK HERE</Button>
+      {btnClicked && <Modal />}
+      <p className="absolute bottom-[18rem] right-[40%] text-[3rem]">
+        Let`s create something remarkable together!
+      </p>
+      <img
+        src="src/assets/continuously-growing.png"
+        alt="Winning image"
+        className="absolute bottom-[-3rem] right-[25%] w-[40%] "
+      />
+    </div>
+  );
 }
 
 export default Projects;

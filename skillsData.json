@@ -75,5 +75,42 @@
       "name": "Team Oriented",
       "details": "By fostering open communication and mutual respect, I contribute to a positive team dynamic, working collectively towards shared goals and driving success together."
     }
+  ],
+  "projects": [
+    {
+      "src": "src/assets/skill-team.png",
+      "alt": "Project 1",
+      "codeLink": "",
+      "siteLink": "",
+      "description": "1"
+    },
+    {
+      "src": "src/assets/skill-flexible.png",
+      "alt": "Project 2",
+      "codeLink": "",
+      "siteLink": "",
+      "description": "2"
+    },
+    {
+      "src": "img3",
+      "alt": "Project 3",
+      "codeLink": "",
+      "siteLink": "",
+      "description": "3"
+    },
+    {
+      "src": "img4",
+      "alt": "Project 4",
+      "codeLink": "",
+      "siteLink": "",
+      "description": "4"
+    },
+    {
+      "src": "img5",
+      "alt": "Project 5",
+      "codeLink": "",
+      "siteLink": "",
+      "description": "5"
+    }
   ]
 }

@@ -3,7 +3,7 @@ import SkillsSlider from "../ui/SkillsSlider";
 function SkillsPage() {
   return (
     <div className="flex flex-col items-center">
-      <header className="text-center mt-[8rem] text-[4rem] leading-[4.5rem]">
+      <header className="text-center mt-[8rem] text-[4rem] leading-[4.5rem] drop-shadow-3xl">
         Welcome to my skill showcase, <br />
         <span className="text-[3.5rem]">
           where pixels meet precision and code finds its rhythm!
