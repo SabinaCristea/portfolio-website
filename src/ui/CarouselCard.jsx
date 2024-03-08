@@ -1,47 +1,34 @@
 import { Link } from "react-router-dom";
 import styles from "./CarouselCard.module.css";
+import { useState } from "react";
+import { useSpring, animated } from "react-spring";
 
-function CarouselCard({ data }) {
-  // return (
-  //   <div>
-  //     {data.map((project, index) => (
-  //       <div key={index}>
-  //         <img src={project.src} alt={project.alt} />
-  //         <Link to={project.codeLink}>Code</Link>
-  //         <Link to={project.siteLink}>Site</Link>
-  //       </div>
-  //     ))}
-  //   </div>
-  // );
+function CarouselCard({ data: projectCards }) {
+
+  const [show, setShown] = useState(false);
+
+  const props3 = useSpring({
+    transform: show ? "scale(1.03)" : "scale(1)",
+    boxShadow: show
+      ? "0 20px 25px rgb(0 0 0 / 25%)"
+      : "0 2px 10px rgb(0 0 0 / 8%)"
+  });
+
   return (
-    <div>
-      <div className={`${styles.projectCard}`}>
-        <img src={data[0].src} alt={data[0].alt} />
-        <Link to={data[0].codeLink}>Code</Link>
-        <Link to={data[0].siteLink}>Site</Link>
-      </div>
-      <div>
-        <img src={data[1].src} alt={data[1].alt} />
-        <Link to={data[1].codeLink}>Code</Link>
-        <Link to={data[1].siteLink}>Site</Link>
-      </div>
-      <div>
-        <img src={data[2].src} alt={data[2].alt} />
-        <Link to={data[2].codeLink}>Code</Link>
-        <Link to={data[2].siteLink}>Site</Link>
-      </div>
-      <div>
-        <img src={data[3].src} alt={data[3].alt} />
-        <Link to={data[3].codeLink}>Code</Link>
-        <Link to={data[3].siteLink}>Site</Link>
-      </div>
-      <div>
-        <img src={data[4].src} alt={data[4].alt} />
-        <Link to={data[4].codeLink}>Code</Link>
-        <Link to={data[4].siteLink}>Site</Link>
-      </div>
-    </div>
+    <animated.div 
+      className={`${styles.projectSlide} `} 
+      style={props3} 
+      onMouseEnter={() => setShown(true)}
+      onMouseLeave={() => setShown(false)}
+    >
+          <img src={projectCards.src} alt={projectCards.alt} />
+          <div className={`${styles.projectLinks}`}>
+            <Link to={projectCards.codeLink}>Code</Link>
+            <Link to={projectCards.siteLink}>Site</Link>
+          </div>
+    </animated.div>
   );
 }
+
 
 export default CarouselCard;

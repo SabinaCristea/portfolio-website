@@ -78,35 +78,35 @@
   ],
   "projects": [
     {
-      "src": "src/assets/skill-team.png",
+      "src": "src/assets/skill-database.png",
       "alt": "Project 1",
       "codeLink": "",
       "siteLink": "",
       "description": "1"
     },
     {
-      "src": "src/assets/skill-flexible.png",
+      "src": "src/assets/skill-analytical.png",
       "alt": "Project 2",
       "codeLink": "",
       "siteLink": "",
       "description": "2"
     },
     {
-      "src": "img3",
+      "src": "src/assets/skill-details.png",
       "alt": "Project 3",
       "codeLink": "",
       "siteLink": "",
       "description": "3"
     },
     {
-      "src": "img4",
+      "src": "src/assets/skill-react.png",
       "alt": "Project 4",
       "codeLink": "",
       "siteLink": "",
       "description": "4"
     },
     {
-      "src": "img5",
+      "src": "src/assets/skill-typescript.png",
       "alt": "Project 5",
       "codeLink": "",
       "siteLink": "",
