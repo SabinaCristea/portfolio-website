@@ -24,7 +24,7 @@ function Projects() {
       <img
         src="src/assets/continuously-growing.png"
         alt="Winning image"
-        className="absolute bottom-[-3rem] right-[25%] w-[40%] "
+        className="absolute bottom-0 right-[25%] -z-30"
       />
     </div>
   );

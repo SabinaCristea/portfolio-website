@@ -12,6 +12,11 @@ function FirstPage() {
         <WhoAmI />
       </div>
       <Hobbies />
+      {/* <img
+          src="src/assets/drinking-coffee.png"
+          alt="Girl drinking coffee"
+          className={`$(styles.coffeeGirlImg) absolute bottom-0 right-[-10rem] h-[65rem]`}
+        /> */}
     </div>
   );
 }

@@ -28,18 +28,7 @@ function Skills({ data, headline }) {
           </SkillTab>
         ))}
       </div>
-      {/* {data.map(
-        (skill, index) =>
-          activeTabIndex === index && (
-            <SkillDetails
-              key={index}
-              src={skill.src}
-              alt={skill.alt}
-              isActive={activeTabIndex === index}
-              details={skill.details}
-            />
-          )
-      )} */}
+    
       <SkillDetails
         src={activeSkill.src}
         alt={activeSkill.alt}

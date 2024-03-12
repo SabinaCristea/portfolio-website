@@ -3,6 +3,8 @@ import { getData } from "../utils/getData";
 import CarouselCard from "./CarouselCard";
 import { v4 as uuidv4 } from "uuid";
 import Carroussel from "./Carroussel";
+import { SpinnerCircular } from "spinners-react";
+import ErrorMessage from "./ErrorMessage";
 
 
 function ProjectsCarousel() {
@@ -19,11 +21,11 @@ function ProjectsCarousel() {
       let cards = [];
       
       if (isLoading) {
-        return <p>Loading...</p>;
+        return <SpinnerCircular color="var(--color-orange-steps)" secondaryColor="white"/>;
       }
       
       if (error) {
-        return <p>Error: {error.message}</p>;
+        return <ErrorMessage>{error.message}</ErrorMessage>;
       }
       
       if (data) {

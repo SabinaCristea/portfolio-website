@@ -13,7 +13,7 @@ function SkillsPage() {
       <img
         src="src/assets/productive.png"
         alt="Productive team illustration"
-        className="mb-[-1rem]"
+        className="mb-[-1rem] mt-[4rem]"
       />
     </div>
   );

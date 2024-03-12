@@ -3,10 +3,11 @@ import styles from "./Hobbies.module.css";
 
 function Hobbies() {
   return (
+ 
     <div>
-      <div className="bg-[var(--color-orange-transparent)] pb-[15rem] pt-[7rem]">
+      <div className="bg-[var(--color-orange-transparent)] relative">
         <div
-          className={`${styles.hobbiesContainer} flex flex-col text-center
+          className={`${styles.hobbiesContainer} flex flex-col text-center relative pt-[7rem] pb-[50rem]
         `}
         >
           <img
@@ -45,17 +46,20 @@ function Hobbies() {
           <blockquote className="text-[4rem] pb-[4rem]">
             “Curiosity is the wick in the candle of learning.”
           </blockquote>
-          <p className="text-[3rem]">- William Arthur Ward</p>
+          <p className="text-[3rem] mb-[10rem]">- William Arthur Ward</p>
+         
         </div>
       </div>
-      <div className="h-[10rem] w-[110rem] relative mx-auto">
-        <img
+      <div className="h-[0] w-[full] relative mx-auto">
+         <img
           src="src/assets/drinking-coffee.png"
           alt="Girl drinking coffee"
-          className={styles.coffeeGirlImg}
+          className="absolute bottom-[8rem] right-[8%] h-[65rem] z-20"
         />
-      </div>
+         <img src="src/assets/asdff.png" alt="Grass" className="bottom-0 absolute "/>
+       </div> 
     </div>
+   
   );
 }
 

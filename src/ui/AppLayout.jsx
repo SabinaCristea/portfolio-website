@@ -3,6 +3,8 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+import ErrorPage from "./ErrorMessage";
+// import { SpinnerCircular } from "spinners-react";
 
 function AppLayout() {
   // const navigation = useNavigation();
@@ -10,7 +12,7 @@ function AppLayout() {
 
   return (
     <div>
-      {/* {isLoading && <Loader />} */}
+      {/* {isLoading && <SpinnerCircular color="var(--color-orange-steps)" secondaryColor="white" />} */}
 
       <NavBar />
       <Outlet />

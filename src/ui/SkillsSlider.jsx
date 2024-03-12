@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Skills from "../pages/Skills";
 import styles from "./SkillsSlider.module.css";
 import { getData } from "../utils/getData";
+import Loader from "./Loader";
+import ErrorMessage from "./ErrorMessage";
 
 function SkillsSlider() {
   const {
@@ -50,8 +52,8 @@ function SkillsSlider() {
 
   return (
     <div className="w-[140rem] overflow-hidden">
-      {isLoading && <p>Loading...</p>}
-      {error && <p>Error: {error.message}</p>}
+      {isLoading && <Loader  />}
+      {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {skillsData && (
         <div className={`${styles.slider}`}>
           <div
