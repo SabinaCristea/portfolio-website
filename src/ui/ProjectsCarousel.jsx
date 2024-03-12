@@ -15,25 +15,25 @@ function ProjectsCarousel() {
         queryFn: getData,
       });
 
-console.log(data)
-
-let cards = [];
-
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-
-  if (error) {
-    return <p>Error: {error.message}</p>;
-  }
-
-  if (data) {
-    cards = data.projects.map((project, index) => ({
-      key: uuidv4(),
-      content:<CarouselCard data={project}/> ,
       
-    }));
-  }
+      let cards = [];
+      
+      if (isLoading) {
+        return <p>Loading...</p>;
+      }
+      
+      if (error) {
+        return <p>Error: {error.message}</p>;
+      }
+      
+      if (data) {
+        cards = data.projects.map((project, index) => ({
+          key: uuidv4(),
+          content:<CarouselCard data={project}/> ,
+          
+        }));
+      }
+      console.log(data)
 
  console.log(data.projects.length)
 

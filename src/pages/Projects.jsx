@@ -12,8 +12,8 @@ function Projects() {
 
   return (
     <div className="flex flex-col items-center relative h-[100rem] mt-[8rem]">
-      <header className="text-[4rem] drop-shadow-3xl">
-        Explore My Projects
+      <header className="text-[4rem] drop-shadow-3xl mb-[6rem]">
+        Explore A Part Of My Portfolio 😄
       </header>
       <ProjectsCarousel />
       <Button onClick={handleShowModal}>CLICK HERE</Button>

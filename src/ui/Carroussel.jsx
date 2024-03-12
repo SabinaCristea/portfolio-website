@@ -22,6 +22,7 @@ export default function Carroussel(props) {
       return {
         opacity: 1 - Math.abs(offsetFromRadius) / 3,
         filter: `blur(${blurAmount}px)`,
+        
       }
   };
 

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./CarouselCard.module.css";
 import { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import ProjectButton from "./RoundButton";
 
 function CarouselCard({ data: projectCards }) {
 
@@ -22,9 +23,13 @@ function CarouselCard({ data: projectCards }) {
       onMouseLeave={() => setShown(false)}
     >
           <img src={projectCards.src} alt={projectCards.alt} />
-          <div className={`${styles.projectLinks}`}>
-            <Link to={projectCards.codeLink}>Code</Link>
-            <Link to={projectCards.siteLink}>Site</Link>
+          <div className={`${styles.projectLinks} flex gap-[4rem] items-center absolute bottom-0 left-[10rem]`}>
+            <ProjectButton to={projectCards.codeLink}>
+              <img src="src/assets/developer_mode.svg" alt="Code icon" className="w-[6rem] h-[6rem] "  />
+            </ProjectButton>
+            <ProjectButton to={projectCards.siteLink}>
+              <img src="src/assets/portal.svg" alt="Web icon" className="w-[6rem] h-[6rem]" />
+            </ProjectButton>
           </div>
     </animated.div>
   );
