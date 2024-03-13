@@ -5,6 +5,8 @@
   max-width: 110rem;
   margin: 0 auto;
   margin-top: 4rem;
+
+  z-index: 9999;
 }
 
 .navigation {

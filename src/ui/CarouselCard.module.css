@@ -1,25 +1,10 @@
-
 .projectSlide {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: bisque;
-  width: 75rem;
+  align-items: center;
+  width: 77rem;
   height: 45rem;
-  padding: 0 2rem 2rem 2rem;
-  border-radius: 20px;
+  padding: 0rem 2rem 0rem 2rem;
+  border-radius: 2rem;
 }
-
-.card img {
-  margin-top: -20%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.projectLinks{
-  display: flex;
-}
-
-
-

@@ -18,17 +18,26 @@ export default function Carroussel(props) {
   }, [props.offset, props.showArrows]);
 
   const customStyles = (offsetFromRadius, index) => {
-      const blurAmount = Math.abs(offsetFromRadius) * 5; 
-      return {
-        opacity: 1 - Math.abs(offsetFromRadius) / 3,
-        filter: `blur(${blurAmount}px)`,
-        
-      }
+    const blurAmount = Math.abs(offsetFromRadius) * 9;
+    let angle = offsetFromRadius !== 0 ? -33 : -25;
+    let scale = 1 - Math.abs(offsetFromRadius) / 2.5;
+    // let zTranslation = -Math.abs(offsetFromRadius) * 20;
+
+    return {
+      opacity: 1 - Math.abs(offsetFromRadius) / 100,
+      transform: `rotate(${angle}deg) scale(${scale}) `,
+      filter: `blur(${blurAmount}px)`,
+    };
   };
+  //  translateZ(${zTranslation}px)
 
   return (
     <div
-      style={{ width: props.width, height: props.height, margin: props.margin }}
+      style={{
+        width: props.width,
+        height: props.height,
+        margin: props.margin,
+      }}
     >
       <Carousel
         slides={cards}

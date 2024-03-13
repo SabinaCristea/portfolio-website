@@ -11,13 +11,15 @@ function Projects() {
   }
 
   return (
-    <div className="flex flex-col items-center relative h-[100rem] mt-[8rem]">
+    <div className="flex flex-col items-center relative h-[140rem] mt-[8rem]">
       <header className="text-[4rem] drop-shadow-3xl mb-[6rem]">
         Explore A Part Of My Portfolio 😄
       </header>
       <ProjectsCarousel />
-      <Button onClick={handleShowModal}>CLICK HERE</Button>
-      {btnClicked && <Modal />}
+      <div className="mt-[10rem]">
+        <Button onClick={handleShowModal}>CLICK HERE</Button>
+        {btnClicked && <Modal />}
+      </div>
       <p className="absolute bottom-[18rem] right-[40%] text-[3rem]">
         Let`s create something remarkable together!
       </p>

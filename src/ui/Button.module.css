@@ -40,5 +40,5 @@
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-  background-color: var(--color-green-transparent-btn);
+  /* background-color: var(--color-green-transparent-btn); */
 }

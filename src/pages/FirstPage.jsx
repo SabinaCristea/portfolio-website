@@ -8,15 +8,8 @@ function FirstPage() {
     <div>
       <Home />
       <PresentationCard />
-      <div id="section-about">
-        <WhoAmI />
-      </div>
+      <WhoAmI />
       <Hobbies />
-      {/* <img
-          src="src/assets/drinking-coffee.png"
-          alt="Girl drinking coffee"
-          className={`$(styles.coffeeGirlImg) absolute bottom-0 right-[-10rem] h-[65rem]`}
-        /> */}
     </div>
   );
 }

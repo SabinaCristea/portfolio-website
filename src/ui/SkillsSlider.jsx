@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Skills from "../pages/Skills";
 import styles from "./SkillsSlider.module.css";
 import { getData } from "../utils/getData";
@@ -21,6 +21,20 @@ function SkillsSlider() {
   const [btnLeftVisible, setBtnLeftVisible] = useState(false);
   const maxSlide = 2;
 
+  const nextSlide = () => {
+    setCurSlide(() => maxSlide - 1);
+    // console.log("next");
+    setBtnRightVisible(false);
+    setBtnLeftVisible(true);
+  };
+
+  const prevSlide = useCallback(() => {
+    setCurSlide(curSlide - 1);
+    // console.log("prev");
+    setBtnLeftVisible(false);
+    setBtnRightVisible(true);
+  }, [curSlide]);
+
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "ArrowLeft") {
@@ -34,25 +48,11 @@ function SkillsSlider() {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [curSlide]);
-
-  const nextSlide = () => {
-    setCurSlide(() => maxSlide - 1);
-    console.log("next");
-    setBtnRightVisible(false);
-    setBtnLeftVisible(true);
-  };
-
-  const prevSlide = () => {
-    setCurSlide(() => curSlide - 1);
-    console.log("prev");
-    setBtnLeftVisible(false);
-    setBtnRightVisible(true);
-  };
+  }, [curSlide, prevSlide]);
 
   return (
     <div className="w-[140rem] overflow-hidden">
-      {isLoading && <Loader  />}
+      {isLoading && <Loader />}
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {skillsData && (
         <div className={`${styles.slider}`}>
