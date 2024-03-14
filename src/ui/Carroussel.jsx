@@ -17,11 +17,10 @@ export default function Carroussel(props) {
     setShowArrows(props.showArrows);
   }, [props.offset, props.showArrows]);
 
-  const customStyles = (offsetFromRadius, index) => {
+  const customStyles = (offsetFromRadius) => {
     const blurAmount = Math.abs(offsetFromRadius) * 9;
     let angle = offsetFromRadius !== 0 ? -33 : -25;
     let scale = 1 - Math.abs(offsetFromRadius) / 2.5;
-    // let zTranslation = -Math.abs(offsetFromRadius) * 20;
 
     return {
       opacity: 1 - Math.abs(offsetFromRadius) / 100,
@@ -29,13 +28,11 @@ export default function Carroussel(props) {
       filter: `blur(${blurAmount}px)`,
     };
   };
-  //  translateZ(${zTranslation}px)
 
   return (
     <div
       style={{
         width: props.width,
-        height: props.height,
         margin: props.margin,
       }}
     >

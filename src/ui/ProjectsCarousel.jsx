@@ -67,11 +67,10 @@ function ProjectsCarousel() {
       )}
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {data && (
-        <div className=" mt-[-35rem] ml-[20rem] z-[-9999]">
-          <div className="rotate-[25deg] translate-x-[-50%] mt-[20rem]">
+        <div>
+          <div className="rotate-[25deg] translate-x-[-50%] mt-[15rem] ml-[-5rem]">
             <Carroussel
               cards={cards}
-              height="500px"
               width="650px"
               margin="0 auto"
               offset={1}
@@ -82,6 +81,8 @@ function ProjectsCarousel() {
             <Modal
               style={{
                 backgroundColor: colors[currentSlide % colors.length],
+                maxWidth: "60rem",
+                height: "30rem",
               }}
               onClose={() => setDetailsBtnClicked(false)}
             >

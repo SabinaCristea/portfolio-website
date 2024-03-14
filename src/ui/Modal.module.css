@@ -15,11 +15,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 2rem;
-  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.267);
+  box-shadow: 0.2rem 0.2rem 2rem rgba(0, 0, 0, 0.267);
   padding: 4rem 4rem;
   transition: all 0.5s;
-  max-width: 60rem;
-  height: 30rem;
+
   display: flex;
   align-items: center;
   justify-content: center;

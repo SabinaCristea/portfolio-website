@@ -8,12 +8,10 @@
 .btn:visited {
   text-decoration: none;
   transition: all 0.4s;
-  /* position: relative; */
 }
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  background-color: var(--color-green);
   color: var(--color-pink-primary);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -31,7 +29,6 @@
 .btn::after {
   content: "";
   display: inline-block;
-  /* display: block; */
   height: 100%;
   width: 100%;
   border-radius: 10rem;
@@ -40,5 +37,4 @@
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-  /* background-color: var(--color-green-transparent-btn); */
 }

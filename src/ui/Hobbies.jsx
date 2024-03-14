@@ -15,7 +15,7 @@ function Hobbies() {
           <div className="flex justify-between pb-[15rem]">
             <HobbyCard
               src="src/assets/reading.png"
-              alt="Reading image"
+              alt="Reading illustration"
               bgColor="var(--color-green-hobby-card)"
             >
               Diving into psychology and philosophy books, uncovering the depths
@@ -23,14 +23,14 @@ function Hobbies() {
             </HobbyCard>
             <HobbyCard
               src="src/assets/meditating.png"
-              alt="Meditating image"
+              alt="Meditating illustration"
               bgColor="var(--color-purple-hobby-card)"
             >
               Finding peace within the flow of breath and movement.
             </HobbyCard>
             <HobbyCard
               src="src/assets/hiking.png"
-              alt="Hiking image"
+              alt="Hiking illustration"
               bgColor="var(--color-cream-hobby-card)"
             >
               Exploring paths, finding peace in nature`s embrace, and gaining
@@ -43,7 +43,7 @@ function Hobbies() {
           <p className="text-[3rem] mb-[10rem]">- William Arthur Ward</p>
           <img
             src="src/assets/drinking-coffee.png"
-            alt="Girl drinking coffee"
+            alt="Girl drinking coffee illustration"
             className="absolute bottom-[8rem] right-[10%] h-[65rem] z-20"
           />
         </div>

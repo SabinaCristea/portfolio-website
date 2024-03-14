@@ -11,7 +11,7 @@ function Button({ to, children, onClick }) {
         to={to}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${styles.btn} ${commonClasses} px-10 py-0.5 text-[1.6rem] after:bg-[var(--color-green-transparent-btn)]`}
+        className={`${styles.btn} ${commonClasses} px-10 py-0.5 text-[1.6rem] after:bg-[var(--color-green-transparent-btn)] hover:bg-[var(--color-green)]`}
       >
         {children}
       </Link>
@@ -20,7 +20,7 @@ function Button({ to, children, onClick }) {
   if (onClick)
     return (
       <button
-        className={`${styles.btn} ${commonClasses} px-20 py-8 text-[2rem] drop-shadow-3xl mt-[7rem] bg after:bg-[var(--color-orange-steps)]`}
+        className={`${styles.btn} ${commonClasses} px-20 py-8 text-[2rem] drop-shadow-3xl mt-[7rem] bg after:bg-[var(--color-orange-steps)] hover:bg-[var(--color-project-5)]`}
         onClick={onClick}
       >
         {children}
