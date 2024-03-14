@@ -4,7 +4,7 @@ function Home() {
   return (
     <div
       // className={`${styles.homeContainer} absolute top-0 right-[0] w-[100vw] -z-20`}
-      className={`${styles.homeContainer} `}
+      className={`${styles.homeContainer} h-[90vh]`}
     >
       <p className={`${styles.title} `}>Front-end portfolio of</p>
       <div>

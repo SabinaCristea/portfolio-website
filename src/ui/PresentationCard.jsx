@@ -4,7 +4,7 @@ import styles from "./PresentationCard.module.css";
 
 function PresentationCard() {
   return (
-    <div className="mt-[40rem] flex align-middle justify-center">
+    <div className="mt-[2rem] flex align-middle justify-center">
       <div
         className={`${styles.cardContainer} w-[110rem] flex justify-between pr-28 pl-28 pb-24 pt-8`}
       >

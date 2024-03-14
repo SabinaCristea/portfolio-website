@@ -41,18 +41,18 @@ function Hobbies() {
             “Curiosity is the wick in the candle of learning.”
           </blockquote>
           <p className="text-[3rem] mb-[10rem]">- William Arthur Ward</p>
+          <img
+            src="src/assets/drinking-coffee.png"
+            alt="Girl drinking coffee"
+            className="absolute bottom-[8rem] right-[10%] h-[65rem] z-20"
+          />
         </div>
       </div>
       <div className="h-[0] w-[full] relative mx-auto">
         <img
-          src="src/assets/drinking-coffee.png"
-          alt="Girl drinking coffee"
-          className="absolute bottom-[8rem] right-[15%] h-[65rem] z-20"
-        />
-        <img
           src="src/assets/grass.png"
           alt="Grass"
-          className="bottom-0 absolute "
+          className="bottom-0 absolute right-[50%] translate-x-[50%]"
         />
       </div>
     </div>
