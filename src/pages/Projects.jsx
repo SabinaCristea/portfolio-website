@@ -12,7 +12,7 @@ function Projects() {
 
   return (
     <div className="flex flex-col items-center relative h-[140rem] mt-[8rem]">
-      <header className="text-[4rem] drop-shadow-3xl mb-[6rem]">
+      <header className="text-[4rem] drop-shadow-3xl mb-[6rem] z-[999]">
         Explore A Part Of My Portfolio 😄
       </header>
       <ProjectsCarousel />

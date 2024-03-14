@@ -3,7 +3,13 @@ import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import ProjectButton from "./RoundButton";
 
-function CarouselCard({ data: projectCards, colors, index, onSlideChange }) {
+function CarouselCard({
+  data: projectCards,
+  colors,
+  index,
+  onSlideChange,
+  handleDetailsBtnClick,
+}) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
@@ -36,6 +42,13 @@ function CarouselCard({ data: projectCards, colors, index, onSlideChange }) {
       <div
         className={`${styles.projectLinks} flex gap-[1rem] items-center absolute bottom-[3%] left-[5%]`}
       >
+        <ProjectButton onClick={handleDetailsBtnClick}>
+          <img
+            src="src/assets/info.svg"
+            alt="Info icon"
+            className="w-[6rem] h-[6rem] "
+          />
+        </ProjectButton>
         <ProjectButton to={projectCards.codeLink}>
           <img
             src="src/assets/developer_mode.svg"

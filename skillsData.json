@@ -82,35 +82,35 @@
       "alt": "Project Quiz",
       "codeLink": "https://github.com/SabinaCristea/frontend-quiz",
       "siteLink": "https://frontend-quiz-sabina.netlify.app/",
-      "description": "1111Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum aliquam neque possimus animi accusantium exercitationem? Qui illo veritatis laudantium pariatur aperiam tenetur, impedit explicabo. Eveniet explicabo harum amet nostrum."
+      "description": "A responsive quiz app crafted using React, TypeScript, Vite, and Context API. Choose from 4 quiz types for an engaging learning experience, enhanced with a sleek dark mode for comfortable viewing in any environment."
     },
     {
       "src": "src/assets/project-wild-oasis.png",
       "alt": "Project Wild Oasis",
       "codeLink": "https://github.com/SabinaCristea/the-wild-oasis",
       "siteLink": "https://the-wild-oasis-sabina.netlify.app/login",
-      "description": "2222Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum aliquam neque possimus animi accusantium exercitationem? Qui illo veritatis laudantium pariatur aperiam tenetur, impedit explicabo. Eveniet explicabo harum amet nostrum."
+      "description": "An all-inclusive hotel management application designed for employees, featuring robust authentication, reservation management (booking, updating, and deleting reservation), dark mode for comfortable usage, and intuitive sorting and filtering of information. Developed as part of the Ultimate React course by Jonas Schmedtmann, utilizing React Router, Styled Components, Vite, Context API, React Query, Recharts, Supabase, and other tools."
     },
     {
       "src": "src/assets/project-worldwise.png",
       "alt": "Project WorldWise",
       "codeLink": "https://github.com/SabinaCristea/worldwise",
       "siteLink": "https://worldwise-sabina.netlify.app/",
-      "description": "3333Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum aliquam neque possimus animi accusantium exercitationem? Qui illo veritatis laudantium pariatur aperiam tenetur, impedit explicabo. Eveniet explicabo harum amet nostrum."
+      "description": "WorldWise is your go-to travel companion, allowing you to effortlessly track the cities you've visited worldwide, complete with dates and personalized trip notes. Seamlessly login to access your travel history and enrich your journey experiences. Powered by React Datepicker, Leaflet for map integration, and leveraging Vite and Router for smooth navigation and efficient performance. Unlock the world with WorldWise."
     },
     {
       "src": "src/assets/project-age-calculator.png",
       "alt": "Project Age Calculator",
       "codeLink": "https://github.com/SabinaCristea/age-calculator-app",
       "siteLink": "https://age-calculator-app-sabina.netlify.app/",
-      "description": "4444Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum aliquam neque possimus animi accusantium exercitationem? Qui illo veritatis laudantium pariatur aperiam tenetur, impedit explicabo. Eveniet explicabo harum amet nostrum."
+      "description": "An intuitive age calculator app built with Flexbox, CSS Grid, and Vanilla JavaScript. Simply input your birthdate, and instantly calculate your age. Enjoy a responsive design that adapts seamlessly to various screen sizes. Experience real-time validation to catch errors and ensure accurate inputs, enhancing user experience and reliability."
     },
     {
       "src": "src/assets/project-pizza.png",
       "alt": "Project Pizza",
       "codeLink": "https://github.com/SabinaCristea/fast-react-pizza",
       "siteLink": "https://react-pizza-sabina.netlify.app/",
-      "description": "5555Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum aliquam neque possimus animi accusantium exercitationem? Qui illo veritatis laudantium pariatur aperiam tenetur, impedit explicabo. Eveniet explicabo harum amet nostrum."
+      "description": "A dynamic pizza ordering application developed with React, Redux, Vite, and Tailwind CSS. Browse through a diverse selection of pizzas, add items to your basket, and effortlessly modify quantities. Utilizing APIs for geocoding and pizza listings, the app enhances user convenience. Receive a unique order number and access order history by searching with the order number. Seamlessly place orders through a comprehensive form, with the option to prioritize orders, adjusting pricing and delivery time accordingly."
     }
   ]
 }
