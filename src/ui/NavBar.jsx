@@ -1,11 +1,34 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import { useEffect, useState } from "react";
 
 function NavBar() {
+  const [scroll, setScroll] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isSticky = window.scrollY > 800;
+      setScroll(isSticky);
+      // document.body.style.paddingTop = isSticky ? `120px` : 0;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.navigationContainer}>
-      <div className={styles.navigation}>
-        <NavLink to="/home" className={styles.navLink}>
+    <div
+      className={`${styles.navigationContainer} ${scroll ? styles.sticky : ""}`}
+    >
+      <nav className={styles.navigation}>
+        <NavLink
+          to="/home"
+          className={`${styles.navLink} ${location.pathname === "/home" ? "active" : ""}`}
+        >
           <p className={styles.navLinkText}>HOME</p>
           <span>
             <svg
@@ -70,7 +93,7 @@ function NavBar() {
           </span>
         </NavLink>
 
-        <NavLink to="/home#section-about" className={styles.navLink}>
+        <NavLink to="/about" className={styles.navLink}>
           <p className={styles.navLinkText}>ABOUT ME</p>
           <span>
             <svg
@@ -259,7 +282,7 @@ function NavBar() {
             </svg>
           </span>
         </NavLink>
-      </div>
+      </nav>
     </div>
   );
 }

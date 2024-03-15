@@ -12,9 +12,10 @@ const queryClient = new QueryClient({
 });
 
 const AppLayout = lazy(() => import("./ui/AppLayout"));
-const FirstPage = lazy(() => import("./pages/FirstPage"));
+const HomePage = lazy(() => import("./pages/HomePage"));
+const AboutMePage = lazy(() => import("./pages/AboutMePage"));
 const SkillsPage = lazy(() => import("./pages/SkillsPage"));
-const Projects = lazy(() => import("./pages/Projects"));
+const Projects = lazy(() => import("./pages/ProjectsPage"));
 const PageNotFound = lazy(() => import("./ui/PageNotFound"));
 
 function App() {
@@ -22,19 +23,12 @@ function App() {
     <>
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
-          <Suspense
-            fallback={
-              <Loader
-                height={"h-screen"}
-                // color="var(--color-orange-steps)"
-                // secondaryColor="white"
-              />
-            }
-          >
+          <Suspense fallback={<Loader height={"h-screen"} />}>
             <Routes>
               <Route element={<AppLayout />}>
                 <Route index element={<Navigate replace to="home" />} />
-                <Route path="home" element={<FirstPage />} />
+                <Route path="home" element={<HomePage />} />
+                <Route path="about" element={<AboutMePage />} />
                 <Route path="skills" element={<SkillsPage />} />
                 <Route path="projects" element={<Projects />} />
               </Route>

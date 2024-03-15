@@ -1,12 +1,12 @@
 import ProjectsCarousel from "../ui/ProjectsCarousel";
 import Button from "../ui/Button";
 import Modal from "../ui/Modal";
-import { useEffect, useState } from "react";
-import ThankYouMessage from "../ui/ThankYouMessage";
+import { useState } from "react";
+import ThankYouCard from "../ui/ThankYouCard";
 import useOverflowControl from "../hooks/useOverflowControl";
 import Confetti from "../ui/Confetti";
 
-function Projects() {
+function ProjectsPage() {
   const [btnClicked, setBtnClicked] = useState(false);
   const [confettiCompleted, setConfettiCompleted] = useState(false);
 
@@ -39,11 +39,11 @@ function Projects() {
               backgroundColor: "var(--color-pink-secondary)",
               maxWidth: "80rem",
               height: "55rem",
-              width: "70rem",
+              width: "80rem",
             }}
             onClose={() => setConfettiCompleted(false)}
           >
-            <ThankYouMessage />
+            <ThankYouCard />
           </Modal>
         )}
       </div>
@@ -56,4 +56,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsPage;

@@ -1,7 +1,7 @@
 import { GITHUB_ACCOUNT, LINKEDIN_ACCOUNT } from "../utils/accounts";
 import Button from "./Button";
 
-function ThankYouMessage() {
+function ThankYouCard() {
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
@@ -43,4 +43,4 @@ function ThankYouMessage() {
   );
 }
 
-export default ThankYouMessage;
+export default ThankYouCard;
