@@ -4,7 +4,7 @@ import CarouselCard from "./CarouselCard";
 import { v4 as uuidv4 } from "uuid";
 import Carroussel from "./Carroussel";
 import ErrorMessage from "./ErrorMessage";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
 import Loader from "./Loader";
 import useOverflowControl from "../hooks/useOverflowControl";

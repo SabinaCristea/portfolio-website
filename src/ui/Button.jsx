@@ -20,7 +20,7 @@ function Button({ to, children, onClick }) {
   if (onClick)
     return (
       <button
-        className={`${styles.btn} ${commonClasses} px-20 py-8 text-[2rem] drop-shadow-3xl mt-[7rem] bg after:bg-[var(--color-orange-steps)] hover:bg-[var(--color-project-5)]`}
+        className={`${styles.btn} ${commonClasses} px-20 py-8 text-[2rem] drop-shadow-3xl mt-[7rem] bg after:bg-[var(--color-project-4)] hover:bg-[var(--color-project-5)]`}
         onClick={onClick}
       >
         {children}
