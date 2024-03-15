@@ -52,7 +52,7 @@ function SkillsSlider() {
 
   return (
     <div className="w-[140rem] overflow-hidden">
-      {isLoading && <Loader />}
+      {isLoading && <Loader height={"100%"} />}
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {skillsData && (
         <div className={`${styles.slider}`}>

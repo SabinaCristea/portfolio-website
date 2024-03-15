@@ -3,10 +3,10 @@ import { getData } from "../utils/getData";
 import CarouselCard from "./CarouselCard";
 import { v4 as uuidv4 } from "uuid";
 import Carroussel from "./Carroussel";
-import { SpinnerCircular } from "spinners-react";
 import ErrorMessage from "./ErrorMessage";
 import { useState } from "react";
 import Modal from "./Modal";
+import Loader from "./Loader";
 
 function ProjectsCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -59,12 +59,7 @@ function ProjectsCarousel() {
 
   return (
     <div>
-      {isLoading && (
-        <SpinnerCircular
-          color="var(--color-orange-steps)"
-          secondaryColor="white"
-        />
-      )}
+      {isLoading && <Loader height={"100%"} />}
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {data && (
         <div>

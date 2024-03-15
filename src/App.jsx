@@ -25,8 +25,9 @@ function App() {
           <Suspense
             fallback={
               <Loader
-                color="var(--color-orange-steps)"
-                secondaryColor="white"
+                height={"h-screen"}
+                // color="var(--color-orange-steps)"
+                // secondaryColor="white"
               />
             }
           >

@@ -2,6 +2,7 @@ import styles from "./CarouselCard.module.css";
 import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import ProjectButton from "./RoundButton";
+import Tooltip from "./Tooltip";
 
 function CarouselCard({
   data: projectCards,
@@ -42,27 +43,33 @@ function CarouselCard({
       <div
         className={`${styles.projectLinks} flex gap-[1rem] items-center absolute bottom-[3%] left-[5%]`}
       >
-        <ProjectButton onClick={handleDetailsBtnClick}>
-          <img
-            src="src/assets/info.svg"
-            alt="Info icon"
-            className="w-[6rem] h-[6rem] "
-          />
-        </ProjectButton>
-        <ProjectButton to={projectCards.codeLink}>
-          <img
-            src="src/assets/developer_mode.svg"
-            alt="Code icon"
-            className="w-[6rem] h-[6rem] "
-          />
-        </ProjectButton>
-        <ProjectButton to={projectCards.siteLink}>
-          <img
-            src="src/assets/portal.svg"
-            alt="Web icon"
-            className="w-[6rem] h-[6rem]"
-          />
-        </ProjectButton>
+        <Tooltip text="Project details">
+          <ProjectButton onClick={handleDetailsBtnClick}>
+            <img
+              src="src/assets/info.svg"
+              alt="Info icon"
+              className="w-[6rem] h-[6rem] "
+            />
+          </ProjectButton>
+        </Tooltip>
+        <Tooltip text="Access project code">
+          <ProjectButton to={projectCards.codeLink}>
+            <img
+              src="src/assets/developer_mode.svg"
+              alt="Code icon"
+              className="w-[6rem] h-[6rem] "
+            />
+          </ProjectButton>
+        </Tooltip>
+        <Tooltip text="Access project website">
+          <ProjectButton to={projectCards.siteLink}>
+            <img
+              src="src/assets/portal.svg"
+              alt="Web icon"
+              className="w-[6rem] h-[6rem]"
+            />
+          </ProjectButton>
+        </Tooltip>
       </div>
     </animated.div>
   );
