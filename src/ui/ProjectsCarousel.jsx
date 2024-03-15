@@ -4,9 +4,10 @@ import CarouselCard from "./CarouselCard";
 import { v4 as uuidv4 } from "uuid";
 import Carroussel from "./Carroussel";
 import ErrorMessage from "./ErrorMessage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import Loader from "./Loader";
+import useOverflowControl from "../hooks/useOverflowControl";
 
 function ProjectsCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,6 +18,8 @@ function ProjectsCarousel() {
     queryFn: getData,
   });
 
+  useOverflowControl(detailsBtnClicked);
+
   const colors = [
     "var( --color-project-1)",
     "var( --color-project-2)",
@@ -25,18 +28,8 @@ function ProjectsCarousel() {
     "var( --color-project-5)",
   ];
 
-  // Function to toggle body scroll lock
-  // const toggleBodyScroll = (lock) => {
-  //   if (lock) {
-  //     document.body.classList.add("hidden");
-  //   } else {
-  //     document.body.classList.remove("body-scroll-lock");
-  //   }
-  // };
-
   function handleDetailsBtnClick() {
     setDetailsBtnClicked((isClicked) => !isClicked);
-    // toggleBodyScroll(true);
   }
 
   let cards = [];

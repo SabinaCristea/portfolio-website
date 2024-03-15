@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 import Modal from "../ui/Modal";
 import { useState } from "react";
 import ThankYouMessage from "../ui/ThankYouMessage";
+import useOverflowControl from "../hooks/useOverflowControl";
 
 function Projects() {
   const [btnClicked, setBtnClicked] = useState(false);
@@ -10,6 +11,8 @@ function Projects() {
   function handleShowModal() {
     setBtnClicked(() => !btnClicked);
   }
+
+  useOverflowControl(btnClicked);
 
   return (
     <div className="flex flex-col items-center relative h-[auto] mt-[8rem]">
