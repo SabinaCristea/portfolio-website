@@ -1,17 +1,51 @@
 import styles from "./StepsSection.module.css";
+import { useEffect, useRef } from "react";
 
 function StepsSection() {
+  const stepsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.show);
+            console.log(entry.target);
+            console.log("intersecting");
+          }
+        });
+      },
+      {
+        threshold: 0,
+      }
+    );
+
+    const childElements = stepsRef.current.querySelectorAll(
+      `.${styles.stepsContent} > *`
+    );
+
+    childElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      childElements.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
+
   return (
     <div className={styles.stepsSection}>
       <div className={styles.stepsLine}></div>
-      <div className={styles.stepsContent}>
+      <div className={styles.stepsContent} ref={stepsRef}>
         <div className={styles.textFragment}>
           <p className="text-end">
             Hey there! 👋 I`m Sabina, a frontend developer with a unique journey
             that led me to where I am today.
           </p>
         </div>
-        <div className={styles.stepIcon}>
+        <div className={`${styles.stepIcon} ${styles.show}`}>
           <img
             src="src/assets/profile-female.svg"
             alt="Female icon"
