@@ -11,6 +11,7 @@ function ThankYouCard() {
             alt="SVG Image"
             width="100%"
             height="auto"
+            className=" drop-shadow-3xl"
           />
         </div>
         <p className="text-[2.5rem] mt-[-3rem]">
