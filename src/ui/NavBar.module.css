@@ -49,6 +49,8 @@
   color: var(--color-black);
 
   position: relative;
+
+  cursor: pointer;
 }
 
 .navLink.active {

@@ -10,8 +10,6 @@ function StepsSection() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add(styles.show);
-            console.log(entry.target);
-            console.log("intersecting");
           }
         });
       },

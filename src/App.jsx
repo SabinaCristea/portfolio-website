@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
+        <BrowserRouter scrollBehavior="auto">
           <Suspense fallback={<Loader height={"h-screen"} />}>
             <Routes>
               <Route element={<AppLayout />}>

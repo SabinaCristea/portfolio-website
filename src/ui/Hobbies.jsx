@@ -4,7 +4,7 @@ import styles from "./Hobbies.module.css";
 function Hobbies() {
   return (
     <div>
-      <div className=" relative">
+      <div className="relative">
         <div
           className={`${styles.hobbiesContainer} flex flex-col text-center relative pt-[7rem] pb-[50rem]
         `}
