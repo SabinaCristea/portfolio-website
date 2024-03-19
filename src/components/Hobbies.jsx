@@ -1,15 +1,11 @@
 import HobbyCard from "./HobbyCard";
-import styles from "./Hobbies.module.css";
 
 function Hobbies() {
   return (
     <div>
       <div className="relative">
-        <div
-          className={`${styles.hobbiesContainer} flex flex-col text-center relative pt-[7rem] pb-[50rem]
-        `}
-        >
-          <header className={`${styles.header} text-[5rem] pb-[10rem] `}>
+        <div className="flex flex-col text-center relative pt-[7rem] pb-[50rem] max-w-[110rem] m-auto">
+          <header className="text-[5rem] pb-[10rem] drop-shadow-3xl">
             Activities that bring me joy
           </header>
           <div className="flex justify-between pb-[15rem]">
@@ -37,7 +33,7 @@ function Hobbies() {
               strength one step at a time.
             </HobbyCard>
           </div>
-          <blockquote className="text-[4rem] pb-[4rem]">
+          <blockquote className="text-[4rem] pb-[4rem] drop-shadow-3xl">
             “Curiosity is the wick in the candle of learning.”
           </blockquote>
           <p className="text-[3rem] mb-[10rem]">- William Arthur Ward</p>

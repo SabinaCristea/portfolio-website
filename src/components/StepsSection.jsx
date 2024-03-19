@@ -18,9 +18,8 @@ function StepsSection() {
       }
     );
 
-    const childElements = stepsRef.current.querySelectorAll(
-      `.${styles.stepsContent} > *`
-    );
+    const childElements =
+      stepsRef.current.querySelectorAll(`.stepsContent > *`);
 
     childElements.forEach((element) => {
       observer.observe(element);
@@ -33,96 +32,103 @@ function StepsSection() {
     };
   }, []);
 
+  const iconStyle = `${styles.stepIcon} w-[9rem] h-[9rem] rounded-[50%] flex justify-center items-center z-[99] bg-[var(--color-orange-steps)]`;
+
+  const textStyle = `${styles.textFragment} text-[1.8rem] h-[30rem] flex justify-center items-center`;
+
   return (
-    <div className={styles.stepsSection}>
-      <div className={styles.stepsLine}></div>
-      <div className={styles.stepsContent} ref={stepsRef}>
-        <div className={styles.textFragment}>
+    <div className="max-w-[114rem] m-auto relative">
+      <div className="absolute top-[13rem] left-[50%] translate-x-[-50%] h-[88%] col-start-2 col-end-3 border-l-[1rem] border-dotted border-[var(--color-green-transparent)] z-0"></div>
+      <div
+        className="stepsContent grid grid-cols-[1fr_auto_1fr] grid-rows-7 gap-x-[3rem] items-center px-[2rem]"
+        ref={stepsRef}
+      >
+        <div className={textStyle}>
           <p className="text-end">
             Hey there! 👋 I`m Sabina, a frontend developer with a unique journey
             that led me to where I am today.
           </p>
         </div>
-        <div className={`${styles.stepIcon} ${styles.show}`}>
+        <div className={iconStyle}>
           <img
             src="src/assets/svgs/profile-female.svg"
             alt="Female icon"
             width="65%"
           />
         </div>
-        <div className={styles.image1}>
+        <div className={`${styles.image} w-[100%] mb-[-18rem] ml-[10rem]`}>
           <img src="src/assets/imgs/plant-1.png" alt="Right illustration 1" />
         </div>
-        <div className={styles.image2}>
+        <div className={`${styles.image} w-[100%] mb-[-39rem] ml-[-17rem]`}>
           <img src="src/assets/imgs/plant-2.png" alt="Left illustration 1" />
         </div>
-        <div className={styles.stepIcon}>
+        <div className={iconStyle}>
           <img
             src="src/assets/svgs/biotech.svg"
             alt="Biotech icon"
             width="80%"
           />
         </div>
-        <div className={styles.textFragment}>
+        <div className={textStyle}>
           <p>
             Originally trained in medical engineering during my university days,
             I later pursued a master`s degree in biotechnology.
           </p>
         </div>
-        <div className={styles.textFragment}>
+        <div className={textStyle}>
           <p className="text-end">
             However, life had other plans for me, and I found my true passion in
             coding and frontend development.
           </p>
         </div>
-        <div className={styles.stepIcon}>
+        <div className={iconStyle}>
           <img src="src/assets/svgs/code.svg" alt="Code icon" width="65%" />
         </div>
         <div></div>
         <div></div>
-        <div className={styles.stepIcon}>
+        <div className={iconStyle}>
           <img src="src/assets/svgs/trophy.svg" alt="Trophy icon" width="80%" />
         </div>
-        <div className={styles.textFragment}>
+        <div className={textStyle}>
           <p>
             I thrive on attention to detail and enjoy challenging myself to push
             beyond limits, proving that with determination, anything is
             possible.
           </p>
         </div>
-        <div className={styles.textFragment}>
+        <div className={textStyle}>
           <p className="text-end">
             A perpetual learner, I`m always eager to explore new concepts and
             surround myself with individuals who inspire and broaden my
             horizons.
           </p>
         </div>
-        <div className={styles.stepIcon}>
+        <div className={iconStyle}>
           <img src="src/assets/svgs/books.svg" alt="Books icon" width="75%" />
         </div>
-        <div className={styles.image3}>
+        <div className={`${styles.image} w-[100%] mb-[-15rem] ml-[8rem]`}>
           <img src="src/assets/imgs/plant-3.png" alt="Right illustration 2" />
         </div>
-        <div className={styles.image4}>
+        <div className={`${styles.image} w-[100%] mb-[-14rem] ml-[-5rem]`}>
           <img src="src/assets/imgs/plant-4.png" alt="Left illustration 2" />
         </div>
-        <div className={styles.stepIcon}>
+        <div className={iconStyle}>
           <img src="src/assets/svgs/sprout.svg" alt="Plant icon" width="80%" />
         </div>
-        <div className={styles.textFragment}>
+        <div className={textStyle}>
           <p>
             Described by friends as disciplined, ambitious, creative, and
             well-organized, I constantly strive to evolve into the best version
             of myself.
           </p>
         </div>
-        <div className={styles.textFragment}>
+        <div className={textStyle}>
           <p className="text-end">
             Fueled by curiosity and propelled by my untapped potential, I`m on a
             perpetual journey of growth and self-discovery.
           </p>
         </div>
-        <div className={styles.stepIcon}>
+        <div className={iconStyle}>
           <img src="src/assets/svgs/map.svg" alt="Map icon" width="60%" />
         </div>
       </div>

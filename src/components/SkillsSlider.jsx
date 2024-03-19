@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useCallback, useEffect, useState } from "react";
 import Skills from "./Skills";
-import styles from "./SkillsSlider.module.css";
 import { getData } from "../utils/getData";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
@@ -23,14 +22,12 @@ function SkillsSlider() {
 
   const nextSlide = () => {
     setCurSlide(() => maxSlide - 1);
-    // console.log("next");
     setBtnRightVisible(false);
     setBtnLeftVisible(true);
   };
 
   const prevSlide = useCallback(() => {
     setCurSlide(curSlide - 1);
-    // console.log("prev");
     setBtnLeftVisible(false);
     setBtnRightVisible(true);
   }, [curSlide]);
@@ -50,28 +47,33 @@ function SkillsSlider() {
     };
   }, [curSlide, prevSlide]);
 
+  const slideTransition =
+    "transition-transform duration-1000 absolute w-[100%] top-0";
+  const btnStyle =
+    "absolute top-[50%] z-10 translate-y-[-50%] flex flex-col items-center";
+
   return (
     <div className="w-[140rem] overflow-hidden">
       {isLoading && <Loader height={"100%"} />}
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {skillsData && (
-        <div className={`${styles.slider}`}>
+        <div className="relative w-[110rem] h-[57.7rem] mt-[7rem] mb-[3rem] mx-[auto]">
           <div
-            className={`${styles.slide} ${styles.slide1} `}
+            className={slideTransition}
             style={{ transform: `translateX(-${curSlide * 150}%) ` }}
           >
             <Skills data={skillsData.hardSkills} headline="Expertise" />
           </div>
 
           <div
-            className={`${styles.slide} ${styles.slide2} `}
+            className={`${slideTransition} left-[150%]`}
             style={{ transform: `translateX(-${curSlide * 150}%)` }}
           >
             <Skills data={skillsData.softSkills} headline="Soft Skills" />
           </div>
 
           <button
-            className={`${styles.btn} ${styles.btnRight} flex flex-col items-center ${btnRightVisible ? "" : "hidden"}`}
+            className={`${btnStyle} right-[-25rem]  ${btnRightVisible ? "" : "hidden"}`}
             onClick={nextSlide}
           >
             <img
@@ -83,7 +85,7 @@ function SkillsSlider() {
           </button>
 
           <button
-            className={`${styles.btn} ${styles.btnLeft} flex flex-col items-center ${btnLeftVisible ? "" : "hidden"}`}
+            className={`${btnStyle} left-[-25rem] ${btnLeftVisible ? "" : "hidden"}`}
             onClick={prevSlide}
           >
             <img

@@ -26,7 +26,8 @@ function CarouselCard({
 
   return (
     <animated.div
-      className={`${styles.projectSlide}`}
+      // className={`${styles.projectSlide}`}
+      className="flex flex-col justify-center items-center w-[77rem] h-[45rem] px-[2rem] py-0 rounded-[2rem]"
       style={{
         ...props3,
         backgroundColor: colors[index % colors.length],
