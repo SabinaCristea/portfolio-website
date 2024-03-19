@@ -1,5 +1,5 @@
-import PresentationCard from "../ui/PresentationCard";
-import Home from "./Home";
+import PresentationCard from "../components/PresentationCard";
+import Home from "../components/Home";
 
 function HomePage() {
   return (

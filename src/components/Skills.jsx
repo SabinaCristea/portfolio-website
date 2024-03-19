@@ -1,6 +1,6 @@
 import { useState } from "react";
-import SkillTab from "../ui/SkillTab";
-import SkillDetails from "../ui/SkillDetails";
+import SkillTab from "./SkillTab";
+import SkillDetails from "./SkillDetails";
 
 function Skills({ data, headline }) {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -28,7 +28,7 @@ function Skills({ data, headline }) {
           </SkillTab>
         ))}
       </div>
-    
+
       <SkillDetails
         src={activeSkill.src}
         alt={activeSkill.alt}

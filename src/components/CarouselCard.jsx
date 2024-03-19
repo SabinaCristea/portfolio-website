@@ -46,7 +46,7 @@ function CarouselCard({
         <Tooltip text="Project details">
           <ProjectButton onClick={handleDetailsBtnClick}>
             <img
-              src="src/assets/info.svg"
+              src="src/assets/svgs/info.svg"
               alt="Info icon"
               className="w-[6rem] h-[6rem] "
             />
@@ -55,7 +55,7 @@ function CarouselCard({
         <Tooltip text="Access project code">
           <ProjectButton to={projectCards.codeLink}>
             <img
-              src="src/assets/developer_mode.svg"
+              src="src/assets/svgs/developer_mode.svg"
               alt="Code icon"
               className="w-[6rem] h-[6rem] "
             />
@@ -64,7 +64,7 @@ function CarouselCard({
         <Tooltip text="Access project website">
           <ProjectButton to={projectCards.siteLink}>
             <img
-              src="src/assets/portal.svg"
+              src="src/assets/svgs/portal.svg"
               alt="Web icon"
               className="w-[6rem] h-[6rem]"
             />

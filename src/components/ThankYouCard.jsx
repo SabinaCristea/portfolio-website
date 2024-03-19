@@ -7,7 +7,7 @@ function ThankYouCard() {
       <div className="flex flex-col items-center justify-center">
         <div className="w-[45rem] mt-[0]">
           <img
-            src="src/assets/thank-you.svg"
+            src="src/assets/svgs/thank-you.svg"
             alt="SVG Image"
             width="100%"
             height="auto"
@@ -21,7 +21,7 @@ function ThankYouCard() {
         <div className="flex gap-[3rem] mt-[1rem]">
           <Button to={GITHUB_ACCOUNT}>
             <img
-              src="src/assets/icons8-github.svg"
+              src="src/assets/svgs/icons8-github.svg"
               alt="SVG Image"
               className="max-w-[5rem]"
             />
@@ -29,7 +29,7 @@ function ThankYouCard() {
           </Button>
           <Button to={LINKEDIN_ACCOUNT}>
             <img
-              src="src/assets/icons8-linkedin.svg"
+              src="src/assets/svgs/icons8-linkedin.svg"
               alt="SVG Image"
               className="max-w-[5rem]"
             />
@@ -37,7 +37,10 @@ function ThankYouCard() {
           </Button>
         </div>
         <div className="mt-[2rem]">
-          <img src="src/assets/lets-connect.png" alt="Connect illustration" />
+          <img
+            src="src/assets/imgs/lets-connect.png"
+            alt="Connect illustration"
+          />
         </div>
       </div>
     </div>

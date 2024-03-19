@@ -13,7 +13,7 @@
   left: 0;
   width: 100%;
   height: 90vh;
-  background-image: url("src/assets/earth-cover.png");
+  background-image: url("src/assets/imgs/earth-cover.png");
   background-size: cover;
   background-position: center;
   z-index: -1;

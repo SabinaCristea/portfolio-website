@@ -45,19 +45,23 @@ function StepsSection() {
         </div>
         <div className={`${styles.stepIcon} ${styles.show}`}>
           <img
-            src="src/assets/profile-female.svg"
+            src="src/assets/svgs/profile-female.svg"
             alt="Female icon"
             width="65%"
           />
         </div>
         <div className={styles.image1}>
-          <img src="src/assets/plant-1.png" alt="Right illustration 1" />
+          <img src="src/assets/imgs/plant-1.png" alt="Right illustration 1" />
         </div>
         <div className={styles.image2}>
-          <img src="src/assets/plant-2.png" alt="Left illustration 1" />
+          <img src="src/assets/imgs/plant-2.png" alt="Left illustration 1" />
         </div>
         <div className={styles.stepIcon}>
-          <img src="src/assets/biotech.svg" alt="Biotech icon" width="80%" />
+          <img
+            src="src/assets/svgs/biotech.svg"
+            alt="Biotech icon"
+            width="80%"
+          />
         </div>
         <div className={styles.textFragment}>
           <p>
@@ -72,12 +76,12 @@ function StepsSection() {
           </p>
         </div>
         <div className={styles.stepIcon}>
-          <img src="src/assets/code.svg" alt="Code icon" width="65%" />
+          <img src="src/assets/svgs/code.svg" alt="Code icon" width="65%" />
         </div>
         <div></div>
         <div></div>
         <div className={styles.stepIcon}>
-          <img src="src/assets/trophy.svg" alt="Trophy icon" width="80%" />
+          <img src="src/assets/svgs/trophy.svg" alt="Trophy icon" width="80%" />
         </div>
         <div className={styles.textFragment}>
           <p>
@@ -94,16 +98,16 @@ function StepsSection() {
           </p>
         </div>
         <div className={styles.stepIcon}>
-          <img src="src/assets/books.svg" alt="Books icon" width="75%" />
+          <img src="src/assets/svgs/books.svg" alt="Books icon" width="75%" />
         </div>
         <div className={styles.image3}>
-          <img src="src/assets/plant-3.png" alt="Right illustration 2" />
+          <img src="src/assets/imgs/plant-3.png" alt="Right illustration 2" />
         </div>
         <div className={styles.image4}>
-          <img src="src/assets/plant-4.png" alt="Left illustration 2" />
+          <img src="src/assets/imgs/plant-4.png" alt="Left illustration 2" />
         </div>
         <div className={styles.stepIcon}>
-          <img src="src/assets/sprout.svg" alt="Plant icon" width="80%" />
+          <img src="src/assets/svgs/sprout.svg" alt="Plant icon" width="80%" />
         </div>
         <div className={styles.textFragment}>
           <p>
@@ -119,7 +123,7 @@ function StepsSection() {
           </p>
         </div>
         <div className={styles.stepIcon}>
-          <img src="src/assets/map.svg" alt="Map icon" width="60%" />
+          <img src="src/assets/svgs/map.svg" alt="Map icon" width="60%" />
         </div>
       </div>
     </div>

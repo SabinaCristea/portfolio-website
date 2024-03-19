@@ -21,7 +21,7 @@ function PresentationCard() {
           <div className="flex justify-between">
             <Button to={GITHUB_ACCOUNT}>
               <img
-                src="src/assets/icons8-github.svg"
+                src="src/assets/svgs/icons8-github.svg"
                 alt="SVG Image"
                 className={styles.btnIcon}
               />
@@ -29,7 +29,7 @@ function PresentationCard() {
             </Button>
             <Button to={LINKEDIN_ACCOUNT}>
               <img
-                src="src/assets/icons8-linkedin.svg"
+                src="src/assets/svgs/icons8-linkedin.svg"
                 alt="SVG Image"
                 className={styles.btnIcon}
               />
@@ -38,7 +38,7 @@ function PresentationCard() {
           </div>
         </div>
         <img
-          src="src/assets/me.png"
+          src="src/assets/imgs/me.png"
           alt="Photo of me"
           className="rounded-b-2xl "
         />

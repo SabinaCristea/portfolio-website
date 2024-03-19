@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useCallback, useEffect, useState } from "react";
-import Skills from "../pages/Skills";
+import Skills from "./Skills";
 import styles from "./SkillsSlider.module.css";
 import { getData } from "../utils/getData";
 import Loader from "./Loader";
@@ -75,7 +75,7 @@ function SkillsSlider() {
             onClick={nextSlide}
           >
             <img
-              src="src/assets/arrow-right.svg"
+              src="src/assets/svgs/arrow-right.svg"
               alt="Arrow right"
               width="20%"
             />
@@ -86,7 +86,11 @@ function SkillsSlider() {
             className={`${styles.btn} ${styles.btnLeft} flex flex-col items-center ${btnLeftVisible ? "" : "hidden"}`}
             onClick={prevSlide}
           >
-            <img src="src/assets/arrow-left.svg" alt="Arrow left" width="20%" />
+            <img
+              src="src/assets/svgs/arrow-left.svg"
+              alt="Arrow left"
+              width="20%"
+            />
             <p>EXPERTISE</p>
           </button>
         </div>

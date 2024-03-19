@@ -1,5 +1,5 @@
-import Hobbies from "../ui/Hobbies";
-import WhoAmI from "../ui/WhoAmI";
+import Hobbies from "../components/Hobbies";
+import WhoAmI from "../components/WhoAmI";
 
 function AboutMePage() {
   return (

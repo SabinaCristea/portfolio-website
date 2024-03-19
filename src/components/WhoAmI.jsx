@@ -9,7 +9,7 @@ function WhoAmI() {
         <div className="relative">
           <StepsSection />
           <img
-            src="src/assets/plant-5.png"
+            src="src/assets/imgs/plant-5.png"
             alt="Photo of plant 5"
             className="absolute bottom-[-3rem] right-[-20rem]"
           />

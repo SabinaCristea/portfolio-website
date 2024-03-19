@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import { useEffect, useState } from "react";
 
@@ -45,7 +45,7 @@ function NavBar() {
             <p className={`${styles.navLinkText} top-[3.5rem]`}>HOME</p>
             <span>
               <img
-                src="src/assets/nav-1.svg"
+                src="src/assets/svgs/nav-1.svg"
                 alt=""
                 className="opacity-[0.28]"
               />
@@ -59,7 +59,7 @@ function NavBar() {
             <p className={`${styles.navLinkText} top-[3.5rem]`}>ABOUT ME</p>
             <span>
               <img
-                src="src/assets/nav-2.svg"
+                src="src/assets/svgs/nav-2.svg"
                 alt=""
                 className="opacity-[0.28]"
               />
@@ -73,7 +73,7 @@ function NavBar() {
             <p className={`${styles.navLinkText} `}>SKILLS & EXPERIENCE</p>
             <span>
               <img
-                src="src/assets/nav-3.svg"
+                src="src/assets/svgs/nav-3.svg"
                 alt=""
                 className="opacity-[0.28] "
               />
@@ -87,7 +87,7 @@ function NavBar() {
             <p className={`${styles.navLinkText} pl-1 `}>PROJECTS</p>
             <span>
               <img
-                src="src/assets/nav-4.svg"
+                src="src/assets/svgs/nav-4.svg"
                 alt=""
                 className="opacity-[0.28]"
               />

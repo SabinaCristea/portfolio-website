@@ -1,4 +1,4 @@
-import SkillsSlider from "../ui/SkillsSlider";
+import SkillsSlider from "../components/SkillsSlider";
 
 function SkillsPage() {
   return (
@@ -11,7 +11,7 @@ function SkillsPage() {
       </header>
       <SkillsSlider />
       <img
-        src="src/assets/productive.png"
+        src="src/assets/imgs/productive.png"
         alt="Productive team illustration"
         className="mb-[-1rem] mt-[4rem]"
       />

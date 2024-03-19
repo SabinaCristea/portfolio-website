@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Suspense, lazy } from "react";
-import Loader from "./ui/Loader";
+import Loader from "./components/Loader";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -11,12 +11,12 @@ const queryClient = new QueryClient({
   },
 });
 
-const AppLayout = lazy(() => import("./ui/AppLayout"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutMePage = lazy(() => import("./pages/AboutMePage"));
 const SkillsPage = lazy(() => import("./pages/SkillsPage"));
 const Projects = lazy(() => import("./pages/ProjectsPage"));
-const PageNotFound = lazy(() => import("./ui/PageNotFound"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 function App() {
   return (

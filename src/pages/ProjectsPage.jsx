@@ -1,10 +1,10 @@
-import ProjectsCarousel from "../ui/ProjectsCarousel";
-import Button from "../ui/Button";
-import Modal from "../ui/Modal";
+import ProjectsCarousel from "../components/ProjectsCarousel";
+import Button from "../components/Button";
+import Modal from "../components/Modal";
 import { useState } from "react";
-import ThankYouCard from "../ui/ThankYouCard";
+import ThankYouCard from "../components/ThankYouCard";
 import useOverflowControl from "../hooks/useOverflowControl";
-import Confetti from "../ui/Confetti";
+import Confetti from "../components/Confetti";
 
 function ProjectsPage() {
   const [btnClicked, setBtnClicked] = useState(false);
@@ -49,7 +49,7 @@ function ProjectsPage() {
       </div>
 
       <img
-        src="src/assets/continuously-growing.png"
+        src="src/assets/imgs/continuously-growing.png"
         alt="Winning illustration"
       />
     </div>

@@ -1,8 +1,8 @@
 // import { useNavigation } from "react-router-dom";
 // import Loader from "./Loader";
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
-import NavBar from "./NavBar";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 function AppLayout() {
   return (
