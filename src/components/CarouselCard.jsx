@@ -1,4 +1,3 @@
-import styles from "./CarouselCard.module.css";
 import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import ProjectButton from "./RoundButton";
@@ -26,7 +25,6 @@ function CarouselCard({
 
   return (
     <animated.div
-      // className={`${styles.projectSlide}`}
       className="flex flex-col justify-center items-center w-[77rem] h-[45rem] px-[2rem] py-0 rounded-[2rem]"
       style={{
         ...props3,
@@ -41,9 +39,7 @@ function CarouselCard({
         alt={projectCards.alt}
         className="rounded-[1rem]"
       />
-      <div
-        className={`${styles.projectLinks} flex gap-[1rem] items-center absolute bottom-[3%] left-[5%]`}
-      >
+      <div className="flex gap-[1rem] items-center absolute bottom-[3%] left-[5%]">
         <Tooltip text="Project details">
           <ProjectButton onClick={handleDetailsBtnClick}>
             <img

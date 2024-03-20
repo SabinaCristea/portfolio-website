@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function PresentationCard() {
   return (
-    <div className="mt-[2rem] mb-[10rem] flex align-middle justify-center">
+    <div className="mt-[12rem] mb-[10rem] flex align-middle justify-center">
       <div className="w-[110rem] flex justify-between pr-28 pl-28 pb-24 pt-8 bg-[var(--color-orange-transparent)] rounded-[2rem] outline-[1rem] outline-dotted outline-[var(--color-orange-transparent)]">
         <div className="flex flex-col self-end gap-16 ">
           <div className=" flex flex-col gap-[4rem]">

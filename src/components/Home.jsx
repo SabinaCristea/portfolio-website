@@ -1,9 +1,17 @@
-import styles from "./Home.module.css";
+import earthCoverImage from "../../src/assets/imgs/earth-cover.png";
 
 function Home() {
   return (
     <div
-      className={`${styles.homeContainer} flex flex-col items-center pt-[4rem] h-[90vh] after:`}
+      className="h-[90vh] flex flex-col items-center pt-[14rem] mt-[-10rem]
+                 after:z-[-1] 
+                 after:h-[90vh] after:w-[100%] after:absolute after:top-0 
+                 after:left-0 after:outline-dotted after:outline-[1rem] after:outline-[var(--color-green)]"
+      style={{
+        backgroundImage: `url(${earthCoverImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <p
         className="text-[2.4rem] uppercase tracking-[0.5rem] mb-[-4rem]"
@@ -19,5 +27,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

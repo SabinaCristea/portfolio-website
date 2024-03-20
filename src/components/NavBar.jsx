@@ -34,10 +34,10 @@ function NavBar() {
 
   return (
     <div
-      className={`${styles.navigationContainer} ${scroll ? styles.sticky : ""}`}
+      className={`flex items-center justify-center max-w-[100vw] m-auto z-[999] py-[1rem] ${scroll ? styles.sticky : ""}`}
     >
       <div className="nav-wrapper h-[8rem]">
-        <nav className={styles.navigation}>
+        <nav className="w-[110rem] flex items-center justify-between">
           <div
             className={`${styles.navLink} ${location.pathname === "/home" ? styles.active : ""}`}
             onClick={() => handleClick("/home")}
