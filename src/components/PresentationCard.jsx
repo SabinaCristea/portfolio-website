@@ -35,7 +35,7 @@ function PresentationCard() {
           </div>
         </div>
         <img
-          src="src/assets/imgs/me.png"
+          src="src/assets/imgs/me.webp"
           alt="Photo of me"
           className="rounded-b-2xl"
         />

@@ -11,7 +11,7 @@ function SkillsPage() {
       </header>
       <SkillsSlider />
       <img
-        src="src/assets/imgs/productive.png"
+        src="src/assets/imgs/productive.webp"
         alt="Productive team illustration"
         className="mb-[-1rem] mt-[4rem]"
       />

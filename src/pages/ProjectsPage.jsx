@@ -49,7 +49,7 @@ function ProjectsPage() {
       </div>
 
       <img
-        src="src/assets/imgs/continuously-growing.png"
+        src="src/assets/imgs/continuously-growing.webp"
         alt="Winning illustration"
       />
     </div>

@@ -57,10 +57,10 @@ function StepsSection() {
           />
         </div>
         <div className={`${styles.image} w-[100%] mb-[-18rem] ml-[10rem]`}>
-          <img src="src/assets/imgs/plant-1.png" alt="Right illustration 1" />
+          <img src="src/assets/imgs/plant-1.webp" alt="Right illustration 1" />
         </div>
         <div className={`${styles.image} w-[100%] mb-[-39rem] ml-[-17rem]`}>
-          <img src="src/assets/imgs/plant-2.png" alt="Left illustration 1" />
+          <img src="src/assets/imgs/plant-2.webp" alt="Left illustration 1" />
         </div>
         <div className={iconStyle}>
           <img
@@ -107,10 +107,10 @@ function StepsSection() {
           <img src="src/assets/svgs/books.svg" alt="Books icon" width="75%" />
         </div>
         <div className={`${styles.image} w-[100%] mb-[-15rem] ml-[8rem]`}>
-          <img src="src/assets/imgs/plant-3.png" alt="Right illustration 2" />
+          <img src="src/assets/imgs/plant-3.webp" alt="Right illustration 2" />
         </div>
         <div className={`${styles.image} w-[100%] mb-[-14rem] ml-[-5rem]`}>
-          <img src="src/assets/imgs/plant-4.png" alt="Left illustration 2" />
+          <img src="src/assets/imgs/plant-4.webp" alt="Left illustration 2" />
         </div>
         <div className={iconStyle}>
           <img src="src/assets/svgs/sprout.svg" alt="Plant icon" width="80%" />

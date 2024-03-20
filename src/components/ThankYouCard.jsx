@@ -38,7 +38,7 @@ function ThankYouCard() {
         </div>
         <div className="mt-[2rem]">
           <img
-            src="src/assets/imgs/lets-connect.png"
+            src="src/assets/imgs/lets-connect.webp"
             alt="Connect illustration"
           />
         </div>

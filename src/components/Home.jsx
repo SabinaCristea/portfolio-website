@@ -1,4 +1,4 @@
-import earthCoverImage from "../../src/assets/imgs/earth-cover.png";
+import earthCoverImage from "../../src/assets/imgs/earth-cover.webp";
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
     >
       <p
         className="text-[2.4rem] uppercase tracking-[0.5rem] mb-[-4rem]"
-        style={{ "word-spacing": "1rem" }}
+        style={{ wordSpacing: "1rem" }}
       >
         Front-end portfolio of
       </p>
