@@ -34,6 +34,10 @@
   user-select: none;
 }
 
+.navLink:active {
+  filter: none;
+}
+
 .navLink.active {
   color: var(--color-pink-primary);
 }
@@ -43,23 +47,10 @@
   filter: drop-shadow(0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.navLink:active {
-  filter: none;
-}
-
 .navLink:hover img {
   opacity: 1;
 }
 
 .navLink.active img {
   opacity: 1;
-}
-
-.navLinkText {
-  font-size: 1.8rem;
-
-  position: absolute;
-  top: 3.5rem;
-
-  letter-spacing: 0.2rem;
 }

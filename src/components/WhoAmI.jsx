@@ -10,7 +10,7 @@ function WhoAmI() {
           <img
             src="src/assets/imgs/plant-5.webp"
             alt="Photo of plant 5"
-            className="absolute bottom-[-3rem] right-[-20rem]"
+            className="absolute bottom-[-3rem] right-[0]"
           />
         </div>
       </div>

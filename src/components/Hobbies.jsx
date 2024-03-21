@@ -40,7 +40,7 @@ function Hobbies() {
           <img
             src="src/assets/imgs/drinking-coffee.webp"
             alt="Girl drinking coffee illustration"
-            className="absolute bottom-[8rem] right-[10%] h-[65rem] z-20"
+            className="absolute bottom-[6rem] right-[10%] max-h-[65rem] z-20"
           />
         </div>
       </div>
