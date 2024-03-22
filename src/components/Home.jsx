@@ -23,7 +23,6 @@ function Home() {
         src="src/assets/svgs/handwritten-font.svg"
         alt="SVG Image"
         className="w-[90%] sm:w-[80%] md:w-[100%] lg:w-[80%]"
-        // className=" w-[100%] md:w-[140%] lg:w-[90%] xl:w-[77%]"
       />
     </div>
   );
