@@ -5,38 +5,38 @@ function ThankYouCard() {
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
-        <div className="w-[45rem] mt-[0]">
+        <div className="md:w-[30rem] lg:w-[35rem] xl:w-[45rem]">
           <img
             src="src/assets/svgs/thank-you.svg"
             alt="SVG Image"
-            width="100%"
-            height="auto"
-            className=" drop-shadow-3xl"
+            className="drop-shadow-3xl w-[100%]"
           />
         </div>
-        <p className="text-[2.5rem] mt-[-3rem]">
+        <p className="lg:text-[2.5rem] mt-[-2rem] xl:mt-[-3rem] text-center">
           for checking out my portfolio website!
         </p>
-        <p className="text-[2rem] mt-[2rem]">Let’s connect!</p>
-        <div className="flex gap-[3rem] mt-[1rem]">
+        <p className="text-[1.8rem] sm:text-[2rem] mt-[2rem]">Let’s connect!</p>
+        <div className="flex flex-col lg:flex-row gap-[1rem] lg:gap-[2rem] xl:gap-[3rem] mt-[1rem] lg:mb-[2rem] xl:mb-0 w-[25rem] md:w-[auto]">
           <Button to={GITHUB_ACCOUNT}>
             <img
               src="src/assets/svgs/icons8-github.svg"
               alt="SVG Image"
-              className="max-w-[5rem]"
+              className="w-[4rem] lg:w-[4rem] xl:w-[5rem]"
             />
-            Find me on GitHub
+            <p className="text-[1.4rem] xl:text-[1.6rem]">Find me on GitHub</p>
           </Button>
           <Button to={LINKEDIN_ACCOUNT}>
             <img
               src="src/assets/svgs/icons8-linkedin.svg"
               alt="SVG Image"
-              className="max-w-[5rem]"
+              className="w-[4rem] lg:w-[4rem] xl:w-[5rem]"
             />
-            Find me on LinkedIn
+            <p className="text-[1.4rem] xl:text-[1.6rem]">
+              Find me on LinkedIn
+            </p>
           </Button>
         </div>
-        <div className="mt-[2rem]">
+        <div className="w-[25rem] md:w-[30rem] lg:w-[28rem] xl:w-[36rem] mt-[2rem] md:mt-[3rem] lg:mt-0 xl:mt-[2rem]">
           <img
             src="src/assets/imgs/lets-connect.webp"
             alt="Connect illustration"

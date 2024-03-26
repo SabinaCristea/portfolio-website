@@ -23,9 +23,12 @@ function CarouselCard({
     onSlideChange(index);
   };
 
+  const btnDimensions =
+    "w-[3.5rem] sm:w-[4rem] md:w-[4.5rem] lg:w-[5rem] lg:h-[5rem] xl:w-[6rem] xl:h-[6rem]";
+
   return (
     <animated.div
-      className="flex flex-col justify-center items-center w-[77rem] h-[45rem] px-[2rem] py-0 rounded-[2rem]"
+      className="flex flex-col justify-center items-center w-[30rem] h-[17rem] sm:w-[40rem] sm:h-[23rem] md:w-[45rem] md:h-[26rem] lg:w-[55rem] lg:h-[32rem] xl:w-[65rem] xl:h-[37rem] 2xl:w-[77rem] 2xl:h-[44rem] px-[1rem] sm:px-[1rem] md:px-[1.2rem] lg:px-[2rem] py-0 rounded-[1.5rem] sm:rounded-[2rem]"
       style={{
         ...props3,
         backgroundColor: colors[index % colors.length],
@@ -39,13 +42,13 @@ function CarouselCard({
         alt={projectCards.alt}
         className="rounded-[1rem]"
       />
-      <div className="flex gap-[1rem] items-center absolute bottom-[3%] left-[5%]">
+      <div className="flex gap-[1.5rem] sm:gap-[1rem] items-center absolute bottom-[-1rem] sm:bottom-[3%] sm:left-[5%]">
         <Tooltip text="Project details">
           <ProjectButton onClick={handleDetailsBtnClick}>
             <img
               src="src/assets/svgs/info.svg"
               alt="Info icon"
-              className="w-[6rem] h-[6rem] "
+              className={btnDimensions}
             />
           </ProjectButton>
         </Tooltip>
@@ -54,7 +57,7 @@ function CarouselCard({
             <img
               src="src/assets/svgs/developer_mode.svg"
               alt="Code icon"
-              className="w-[6rem] h-[6rem] "
+              className={btnDimensions}
             />
           </ProjectButton>
         </Tooltip>
@@ -63,7 +66,7 @@ function CarouselCard({
             <img
               src="src/assets/svgs/portal.svg"
               alt="Web icon"
-              className="w-[6rem] h-[6rem]"
+              className={btnDimensions}
             />
           </ProjectButton>
         </Tooltip>

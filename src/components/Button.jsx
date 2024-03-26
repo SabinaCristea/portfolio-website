@@ -18,7 +18,7 @@ function Button({ to, children, onClick }) {
   if (onClick)
     return (
       <button
-        className={`${btnStyle} px-20 py-8 text-[2rem] drop-shadow-3xl mt-[7rem] after:bg-[var(--color-project-4)] hover:bg-[var(--color-project-5)]`}
+        className={`${btnStyle} px-[4rem] lg:px-[5rem] py-[2rem] lg:text-[2rem] drop-shadow-3xl mt-[5rem] lg:mt-[7rem] after:bg-[var(--color-project-4)] hover:bg-[var(--color-project-5)]`}
         onClick={onClick}
       >
         {children}

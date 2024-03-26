@@ -56,26 +56,26 @@ function ProjectsCarousel() {
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {data && (
         <div>
-          <div className="rotate-[25deg] translate-x-[-50%] mt-[15rem] ml-[-5rem]">
+          <div className="rotate-[25deg] translate-x-[-38%] sm:translate-x-[-48%] md:translate-x-[-41%] lg:translate-x-[-41%] xl:translate-x-[-40%] 2xl:translate-x-[-50%] mt-[12rem] md:mt-[15rem] ml-[-5rem]">
             <Carroussel
               cards={cards}
-              width="650px"
+              // width="650px"
               margin="0 auto"
               offset={1}
               showArrows={false}
+              className="w-[30rem] sm:w-[35rem] md:w-[45rem] lg:w-[55rem] xl:w-[65rem]"
             />
           </div>
           {detailsBtnClicked && (
             <Modal
               style={{
                 backgroundColor: colors[currentSlide % colors.length],
-                maxWidth: "60rem",
-                height: "30rem",
               }}
+              className="w-[32rem] sm:w-[40rem] md:w-[50rem] lg:w-[60rem]"
               onClose={() => setDetailsBtnClicked(false)}
             >
               <p
-                className={`text-center text-[var(--color-black)] text-[1.8rem]`}
+                className={`text-center text-[var(--color-black)] text-[1.4rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] px-[2rem] py-[2rem] lg:py-0`}
               >
                 {data.projects[currentSlide].description}
               </p>
