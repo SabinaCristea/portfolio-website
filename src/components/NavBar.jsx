@@ -35,74 +35,68 @@ function NavBar() {
   const navTextStyle =
     "md:top-[3rem] lg:text-[1.8rem] absolute lg:top-[3.5rem] tracking-[0.2rem]";
 
+  const navLinkStyle = `${styles.navLink} flex flex-col items-center justify-center text-[var(--color-black)] relative cursor-pointer select-none active:filter-none hover:text-[var(--color-pink-primary)] hover:drop-shadow-navLink visited:filter-none`;
+
   return (
     <div
       className={`hidden md:flex md:items-center md:justify-center md:max-w-[100vw] md:m-auto md:z-[999] md:py-[1rem] ${scroll ? styles.sticky : ""}`}
     >
       <div className="nav-wrapper h-[8rem]">
-        <nav className="lg:w-[100rem] flex items-center justify-between xl:w-[110rem] md:w-[80rem]">
+        <nav className="md:w-[76rem] lg:w-[100rem] flex items-center justify-between xl:w-[110rem] ">
           <div
-            className={`${styles.navLink} ${location.pathname === "/home" ? styles.active : ""}`}
+            className={`${navLinkStyle} ${location.pathname === "/home" ? styles.active : ""}`}
             onClick={() => handleClick("/home")}
           >
-            <p className={`${navTextStyle} md:left-[2.5rem] lg:left-[auto]`}>
+            <p className={`${navTextStyle} md:left-[3rem] lg:left-[auto]`}>
               HOME
             </p>
-            <span>
-              <img
-                src="src/assets/svgs/nav-1.svg"
-                alt=""
-                className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
-              />
-            </span>
+            <img
+              src="src/assets/svgs/nav-1.svg"
+              alt=""
+              className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
+            />
           </div>
 
           <div
-            className={`${styles.navLink} ${location.pathname === "/about" ? styles.active : ""}`}
+            className={`${navLinkStyle} ${location.pathname === "/about" ? styles.active : ""}`}
             onClick={() => handleClick("/about")}
           >
-            <p className={`${navTextStyle} md:left-[2rem] lg:left-[auto]`}>
+            <p className={`${navTextStyle} md:left-[2.5rem] lg:left-[auto]`}>
               ABOUT ME
             </p>
-            <span>
-              <img
-                src="src/assets/svgs/nav-2.svg"
-                alt=""
-                className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
-              />
-            </span>
+            <img
+              src="src/assets/svgs/nav-2.svg"
+              alt=""
+              className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
+            />
           </div>
 
           <div
-            className={`${styles.navLink} ${location.pathname === "/skills" ? styles.active : ""}`}
+            className={`${navLinkStyle} ${location.pathname === "/skills" ? styles.active : ""}`}
             onClick={() => handleClick("/skills")}
           >
-            <p className={`${navTextStyle} md:left-[2.8rem] lg:left-[auto]`}>
+            <p className={`${navTextStyle} md:left-[4.2rem] lg:left-[auto]`}>
               SKILLS & EXPERIENCE
             </p>
-            <span>
-              <img
-                src="src/assets/svgs/nav-3.svg"
-                alt=""
-                className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
-              />
-            </span>
+            <img
+              src="src/assets/svgs/nav-3.svg"
+              alt=""
+              className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
+            />
           </div>
 
           <div
-            className={`${styles.navLink} ${location.pathname === "/projects" ? styles.active : ""}`}
+            className={`${navLinkStyle} ${location.pathname === "/projects" ? styles.active : ""}`}
             onClick={() => handleClick("/projects")}
           >
-            <p className={`${navTextStyle} md:left-[2.8rem] lg:left-[auto] `}>
+            <p className={`${navTextStyle} md:left-[3.5rem] lg:left-[auto] `}>
               PROJECTS
             </p>
-            <span>
-              <img
-                src="src/assets/svgs/nav-4.svg"
-                alt=""
-                className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
-              />
-            </span>
+            <img
+              src="src/assets/svgs/nav-4.svg"
+              alt=""
+              className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
+            />
           </div>
         </nav>
       </div>
