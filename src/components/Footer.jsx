@@ -11,7 +11,7 @@ function Footer() {
       <div className=" md:pb-[2rem] md:pt-[2rem] md:px-[5rem] text-[1.2rem] lg:text-[1.3rem] md:max-w-[190rem] md:m-auto">
         <div className="flex flex-col-reverse items-center text-center gap-[2rem] py-[5rem] md:py-0 md:flex-row justify-between ">
           <p className="self-center md:text-left">
-            Copyright ©2024. <br /> Designed by Sabina Cristea
+            Copyright ©2024. <br /> Designed & Developed by Sabina Cristea
           </p>
           <div>
             <div className={`flex items-center`}>

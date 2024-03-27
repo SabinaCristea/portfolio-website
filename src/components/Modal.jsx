@@ -14,7 +14,7 @@ function Modal({ children, onClose, style, className }) {
         style={style}
       >
         <button
-          className="bg-none border-none md:p-[0.4rem] translate-x-[0.8rem] transition-all duration-[0.2s] absolute top-[1.5rem] right-[3rem] hover:text-[var(--color-orange-steps)]"
+          className="bg-none border-none md:p-[0.4rem] translate-x-[0.8rem] transition-all duration-[0.2s] absolute top-[1.5rem] right-[3rem] hover:text-[var(--color-orange-steps)] z-10"
           onClick={onClose}
         >
           X
