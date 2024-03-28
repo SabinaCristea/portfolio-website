@@ -3,7 +3,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import MenuBtn from "../components/MenuBtn";
+import Menu from "../components/Menu";
 
 function AppLayout() {
   return (
@@ -11,7 +11,7 @@ function AppLayout() {
       <div className="hidden md:flex">
         <NavBar />
       </div>
-      <MenuBtn />
+      <Menu />
       <Outlet />
       <Footer />
     </div>

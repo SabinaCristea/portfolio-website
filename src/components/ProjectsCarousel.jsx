@@ -75,7 +75,7 @@ function ProjectsCarousel() {
               onClose={() => setDetailsBtnClicked(false)}
             >
               <p
-                className={`text-center text-[var(--color-black)] text-[1.4rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] px-[2rem] py-[2rem] lg:py-0`}
+                className={`text-center text-[var(--color-black)] text-[1.4rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] px-[2rem] py-[2rem] `}
               >
                 {data.projects[currentSlide].description}
               </p>

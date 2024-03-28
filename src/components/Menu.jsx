@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 import NavBar from "./NavBar";
 
-function MenuBtn() {
+function Menu() {
   const [showMenu, setShowMenu] = useState(false);
 
   function handleOpenMenu() {
@@ -12,9 +12,8 @@ function MenuBtn() {
   return (
     <>
       <button
-        className="bg-[var(--color-pink-primary)] p-[0.7rem] sm:p-[1rem] rounded-[1rem] absolute top-[1rem] left-[1rem] sm:top-[2rem] sm:left-[2rem] md:hidden"
+        className="fixed bg-[var(--color-pink-primary)] p-[0.7rem] sm:p-[1rem] rounded-[1rem] top-[1rem] left-[1rem] sm:top-[2rem] sm:left-[2rem] md:hidden z-[999999]"
         onClick={() => {
-          console.log("asdfghjk");
           handleOpenMenu();
         }}
       >
@@ -30,14 +29,14 @@ function MenuBtn() {
             backgroundColor: "var(--color-pink-primary)",
           }}
           onClose={() => setShowMenu(false)}
-          className="w-[32rem] sm:w-[40rem] h-[50rem]"
+          className="w-[30rem] sm:w-[40rem] h-[auto] px-0 py-0"
           additionalStyle="md:hidden"
         >
-          <NavBar />
+          <NavBar onClose={() => setShowMenu(false)} />
         </Modal>
       )}
     </>
   );
 }
 
-export default MenuBtn;
+export default Menu;

@@ -3,7 +3,7 @@ import styles from "./NavBar.module.css";
 import { useEffect, useState } from "react";
 import NavLink from "./NavLink";
 
-function NavBar() {
+function NavBar({ onClose }) {
   const [scroll, setScroll] = useState(false);
   const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isSticky = window.scrollY > 1050;
+      const isSticky = window.scrollY > 1050 && window.innerWidth > 768;
       setScroll(isSticky);
 
       const nav = document.querySelector("nav");
@@ -41,7 +41,7 @@ function NavBar() {
     <div
       className={`md:flex md:items-center md:justify-center md:max-w-[100vw] md:m-auto md:z-[999] md:py-[1rem] ${scroll ? styles.sticky : ""}`}
     >
-      <div className="nav-wrapper h-[8rem]">
+      <div className="nav-wrapper md:h-[8rem]">
         <nav className="md:w-[76rem] lg:w-[100rem] flex flex-col gap-[2rem] md:gap-0 md:flex-row items-center justify-between xl:w-[110rem] ">
           <NavLink
             navLinkStyle={navLinkStyle}
@@ -50,8 +50,11 @@ function NavBar() {
             alt="Home"
             navNo="1"
             pathName="home"
+            onclose={onClose}
           >
-            <p className={`${navTextStyle} md:left-[3rem] lg:left-[auto] `}>
+            <p
+              className={`${navTextStyle} top-[3.5rem] md:left-[3rem] lg:left-[auto] `}
+            >
               HOME
             </p>
           </NavLink>
@@ -63,8 +66,11 @@ function NavBar() {
             alt="About"
             navNo="2"
             pathName="about"
+            onclose={onClose}
           >
-            <p className={`${navTextStyle} md:left-[2.5rem] lg:left-[auto] `}>
+            <p
+              className={`${navTextStyle} top-[3.5rem] md:left-[2.5rem] lg:left-[auto] `}
+            >
               ABOUT ME
             </p>
           </NavLink>
@@ -76,8 +82,11 @@ function NavBar() {
             alt="Skills"
             navNo="3"
             pathName="skills"
+            onclose={onClose}
           >
-            <p className={`${navTextStyle} md:left-[4.2rem] lg:left-[auto] `}>
+            <p
+              className={`${navTextStyle} top-[3.1rem] md:left-[4.2rem] lg:left-[auto] `}
+            >
               SKILLS & EXPERIENCE
             </p>
           </NavLink>
@@ -89,8 +98,11 @@ function NavBar() {
             alt="Projects"
             navNo="4"
             pathName="projects"
+            onclose={onClose}
           >
-            <p className={`${navTextStyle} md:left-[3.5rem] lg:left-[auto] `}>
+            <p
+              className={`${navTextStyle} top-[3.5rem] md:left-[3.5rem] lg:left-[auto] `}
+            >
               PROJECTS
             </p>
           </NavLink>

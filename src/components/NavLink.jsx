@@ -8,13 +8,17 @@ function NavLink({
   alt,
   navNo,
   pathName,
+  onclose,
 }) {
   const location = useLocation();
 
   return (
-    <div
+    <button
       className={`${navLinkStyle} ${location.pathname === `/${pathName}` ? styles.active : ""}`}
-      onClick={() => handleClick(`/${pathName}`)}
+      onClick={() => {
+        handleClick(`/${pathName}`);
+        onclose();
+      }}
     >
       {children}
       <img
@@ -22,7 +26,7 @@ function NavLink({
         alt={alt}
         className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
       />
-    </div>
+    </button>
   );
 }
 
