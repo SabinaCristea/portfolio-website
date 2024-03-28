@@ -4,11 +4,11 @@ function HobbyCard({ src, alt, children, bgColor }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const cardStyle =
-    "hobbyCardSide absolute h-[28rem] sm:h-[33rem] md:h-[40rem] lg:h-[38rem] xl:h-[40rem] transition-all duration-[0.8s] ease top-0 left-0 w-[100%] rounded-[2rem] md:rounded-[3rem] lg:rounded-[2rem] xl:rounded-[3rem] overflow-hidden flex items-center justify-center shadow-hobbyCard";
+    "hobbyCardSide absolute h-[28rem] sm:h-[33rem] md:h-[25rem] lg:h-[38rem] xl:h-[40rem] transition-all duration-[0.8s] ease top-0 left-0 w-[100%] rounded-[2rem] md:rounded-[3rem] lg:rounded-[2rem] xl:rounded-[3rem] overflow-hidden flex items-center justify-center shadow-hobbyCard";
 
   return (
     <div
-      className="relative h-[28rem] sm:h-[33rem] md:h-[40rem] lg:h-[38rem] xl:h-[40rem] w-[23rem] sm:w-[27rem] md:w-[32rem] lg:w-[28rem] xl:w-[32rem] rounded-[2rem] md:rounded-[3rem] lg:rounded-[2rem] xl:rounded-[3rem]"
+      className="relative h-[28rem] sm:h-[33rem] md:h-[25rem] lg:h-[38rem] xl:h-[40rem] w-[23rem] sm:w-[27rem] md:w-[18rem] lg:w-[28rem] xl:w-[32rem] rounded-[2rem] md:rounded-[3rem] lg:rounded-[2rem] xl:rounded-[3rem]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -34,7 +34,7 @@ function HobbyCard({ src, alt, children, bgColor }) {
           transform: isHovered ? "rotateY(0)" : "rotateY(180deg)",
         }}
       >
-        <div className="text-[1.6rem] sm:text-[2rem] md:text-[2.2rem] text-center px-10">
+        <div className="text-[1.6rem] sm:text-[2rem] md:text-[1.5rem] lg:text-[2.2rem] text-center px-10">
           {children}
         </div>
       </div>

@@ -8,7 +8,7 @@ function Hobbies() {
           <header className="text-[3rem] m-auto sm:w-[auto] md:text-[4rem] lg:text-[5rem] pb-[3rem] sm:pb-[4rem] lg:pb-[5rem] xl:pb-[10rem] drop-shadow-3xl">
             Activities that bring me joy
           </header>
-          <div className="flex flex-col lg:flex-row items-center gap-[4rem] md:gap-[5rem] lg:gap-0 lg:justify-between pb-[4rem] sm:pb-[5rem] lg:pb-[7rem] xl:pb-[15rem]">
+          <div className="flex flex-col md:flex-row items-center gap-[4rem] md:gap-[0rem] lg:gap-0 md:justify-between pb-[4rem] sm:pb-[5rem] lg:pb-[7rem] xl:pb-[15rem]">
             <HobbyCard
               src="/assets/imgs/reading.webp"
               alt="Reading illustration"
