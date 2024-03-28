@@ -18,7 +18,7 @@ function Menu() {
         }}
       >
         <img
-          src="public/assets/svgs/menu.svg"
+          src="/assets/svgs/menu.svg"
           alt="Menu button svg"
           className="w-[2rem] sm:w-[3rem] fill-[var(--color-pink-primary)]"
         />

@@ -7,7 +7,7 @@ function ThankYouCard() {
       <div className="flex flex-col items-center justify-center">
         <div className="md:w-[30rem] lg:w-[35rem] xl:w-[45rem]">
           <img
-            src="public/assets/svgs/thank-you.svg"
+            src="/assets/svgs/thank-you.svg"
             alt="SVG Image"
             className="drop-shadow-3xl w-[100%]"
           />
@@ -19,7 +19,7 @@ function ThankYouCard() {
         <div className="flex flex-col lg:flex-row gap-[1rem] lg:gap-[2rem] xl:gap-[3rem] mt-[1rem] lg:mb-[2rem] xl:mb-0 w-[25rem] md:w-[auto]">
           <Button to={GITHUB_ACCOUNT}>
             <img
-              src="public/assets/svgs/icons8-github.svg"
+              src="/assets/svgs/icons8-github.svg"
               alt="SVG Image"
               className="w-[4rem] lg:w-[4rem] xl:w-[5rem]"
             />
@@ -27,7 +27,7 @@ function ThankYouCard() {
           </Button>
           <Button to={LINKEDIN_ACCOUNT}>
             <img
-              src="public/assets/svgs/icons8-linkedin.svg"
+              src="/assets/svgs/icons8-linkedin.svg"
               alt="SVG Image"
               className="w-[4rem] lg:w-[4rem] xl:w-[5rem]"
             />
@@ -38,7 +38,7 @@ function ThankYouCard() {
         </div>
         <div className="w-[25rem] md:w-[30rem] lg:w-[28rem] xl:w-[36rem] mt-[2rem] md:mt-[3rem] lg:mt-0 xl:mt-[2rem]">
           <img
-            src="public/assets/imgs/lets-connect.webp"
+            src="/assets/imgs/lets-connect.webp"
             alt="Connect illustration"
           />
         </div>

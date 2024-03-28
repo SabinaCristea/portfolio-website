@@ -78,7 +78,7 @@
 //             onClick={nextSlide}
 //           >
 //             <img
-//               src="public/assets/svgs/arrow-right.svg"
+//               src="/assets/svgs/arrow-right.svg"
 //               alt="Arrow right"
 //               className="md:w-[15%] xl:w-[20%]"
 //             />
@@ -90,7 +90,7 @@
 //             onClick={prevSlide}
 //           >
 //             <img
-//               src="public/assets/svgs/arrow-left.svg"
+//               src="/assets/svgs/arrow-left.svg"
 //               alt="Arrow left"
 //               className="md:w-[15%] xl:w-[20%]"
 //             />
@@ -237,7 +237,7 @@ function SkillsSlider() {
             onClick={nextSlide}
           >
             <img
-              src="public/assets/svgs/arrow-right.svg"
+              src="/assets/svgs/arrow-right.svg"
               alt="Arrow right"
               className="w-[10%] sm:w-[15%] xl:w-[20%]"
             />
@@ -251,7 +251,7 @@ function SkillsSlider() {
             onClick={prevSlide}
           >
             <img
-              src="public/assets/svgs/arrow-left.svg"
+              src="/assets/svgs/arrow-left.svg"
               alt="Arrow left"
               className="w-[10%] sm:w-[15%] xl:w-[20%]"
             />

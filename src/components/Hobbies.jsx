@@ -10,7 +10,7 @@ function Hobbies() {
           </header>
           <div className="flex flex-col lg:flex-row items-center gap-[4rem] md:gap-[5rem] lg:gap-0 lg:justify-between pb-[4rem] sm:pb-[5rem] lg:pb-[7rem] xl:pb-[15rem]">
             <HobbyCard
-              src="public/assets/imgs/reading.webp"
+              src="/assets/imgs/reading.webp"
               alt="Reading illustration"
               bgColor="var(--color-green-hobby-card)"
             >
@@ -18,14 +18,14 @@ function Hobbies() {
               of the mind and the mysteries of existence.
             </HobbyCard>
             <HobbyCard
-              src="public/assets/imgs/meditating.webp"
+              src="/assets/imgs/meditating.webp"
               alt="Meditating illustration"
               bgColor="var(--color-purple-hobby-card)"
             >
               Finding peace within the flow of breath and movement.
             </HobbyCard>
             <HobbyCard
-              src="public/assets/imgs/hiking.webp"
+              src="/assets/imgs/hiking.webp"
               alt="Hiking illustration"
               bgColor="var(--color-cream-hobby-card)"
             >
@@ -40,7 +40,7 @@ function Hobbies() {
             - William Arthur Ward
           </p>
           <img
-            src="public/assets/imgs/drinking-coffee.webp"
+            src="/assets/imgs/drinking-coffee.webp"
             alt="Girl drinking coffee illustration"
             className="absolute bottom-[1rem] right-[0rem] sm:bottom-[2rem] sm:right-0 max-h-[35rem] sm:max-h-[40rem] md:bottom-[3rem] md:max-h-[50rem] lg:bottom-[6rem] lg:right-[10%] lg:max-h-[50rem] xl:max-h-[65rem] z-20"
           />
@@ -48,7 +48,7 @@ function Hobbies() {
       </div>
       <div className="h-[0] w-[full] relative mx-auto">
         <img
-          src="public/assets/imgs/grass.webp"
+          src="/assets/imgs/grass.webp"
           alt="Grass"
           className="bottom-0 absolute right-[50%] translate-x-[50%]"
         />

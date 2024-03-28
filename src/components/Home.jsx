@@ -1,4 +1,4 @@
-import earthCoverImage from "../../public/assets/imgs/earth-cover.webp";
+import earthCoverImage from "../..//assets/imgs/earth-cover.webp";
 
 function Home() {
   return (
@@ -20,7 +20,7 @@ function Home() {
         Front-end portfolio of
       </p>
       <img
-        src="public/assets/svgs/handwritten-font.svg"
+        src="/assets/svgs/handwritten-font.svg"
         alt="SVG Image"
         className="w-[35rem] sm:w-[55rem] md:w-[78rem] lg:w-[100rem] xl:w-[110rem] 2xl:w-[80%]"
       />
