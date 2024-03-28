@@ -14,7 +14,7 @@ function Home() {
       }}
     >
       <p
-        className="text-[1.2rem] sm:text-[2rem] mb-[-1rem] sm:mb-[-2rem] md:text-[2.4rem] uppercase tracking-[0.3rem] md:tracking-[0.5rem] md:mb-[-4rem] 2xl:mb-[-9rem] text-center px-[5rem] "
+        className="text-[1.2rem] sm:text-[2rem] mb-[-1rem] sm:mb-[-2rem] md:text-[2.4rem] uppercase tracking-[0.3rem] md:tracking-[0.5rem] md:mb-[-4rem] 2xl:mb-[-8rem] text-center px-[5rem] "
         style={{ wordSpacing: "1rem" }}
       >
         Front-end portfolio of
@@ -22,7 +22,7 @@ function Home() {
       <img
         src="/assets/svgs/handwritten-font.svg"
         alt="SVG Image"
-        className="w-[35rem] sm:w-[55rem] md:w-[78rem] lg:w-[100rem] xl:w-[110rem] 2xl:w-[130rem]"
+        className="w-[35rem] sm:w-[55rem] md:w-[78rem] lg:w-[100rem] xl:w-[110rem] 2xl:w-[120rem]"
       />
     </div>
   );
