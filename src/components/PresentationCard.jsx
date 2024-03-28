@@ -17,7 +17,7 @@ function PresentationCard() {
           </div>
           <div className="flex items-center justify-center mt-[-5rem] md:mt-[-5rem]  lg:hidden">
             <img
-              src="src/assets/imgs/me.webp"
+              src="public/assets/imgs/me.webp"
               alt="Photo of me"
               className="rounded-b-[0.7rem] sm:rounded-b-2xl "
             />
@@ -25,7 +25,7 @@ function PresentationCard() {
           <div className="flex flex-col gap-[1.5rem] lg:flex-row lg:justify-between w-[100%] sm:w-[33.6rem] m-auto lg:w-[auto]">
             <Button to={GITHUB_ACCOUNT}>
               <img
-                src="src/assets/svgs/icons8-github.svg"
+                src="public/assets/svgs/icons8-github.svg"
                 alt="SVG Image"
                 className="max-w-[5rem]"
               />
@@ -35,7 +35,7 @@ function PresentationCard() {
             </Button>
             <Button to={LINKEDIN_ACCOUNT}>
               <img
-                src="src/assets/svgs/icons8-linkedin.svg"
+                src="public/assets/svgs/icons8-linkedin.svg"
                 alt="SVG Image"
                 className="max-w-[5rem]"
               />
@@ -47,7 +47,7 @@ function PresentationCard() {
         </div>
         <div className="lg:flex lg:items-center lg:justify-center hidden">
           <img
-            src="src/assets/imgs/me.webp"
+            src="public/assets/imgs/me.webp"
             alt="Photo of me"
             className="sm:rounded-b-2xl "
           />

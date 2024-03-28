@@ -15,7 +15,7 @@ function StepsSection() {
       },
       {
         threshold: 0,
-      },
+      }
     );
 
     const childElements =
@@ -45,7 +45,7 @@ function StepsSection() {
       >
         <div className={`${iconStyle} lg:hidden`}>
           <img
-            src="src/assets/svgs/profile-female.svg"
+            src="public/assets/svgs/profile-female.svg"
             alt="Female icon"
             width="65%"
           />
@@ -58,7 +58,7 @@ function StepsSection() {
         </div>
         <div className={`${iconStyle} hidden lg:flex`}>
           <img
-            src="src/assets/svgs/profile-female.svg"
+            src="public/assets/svgs/profile-female.svg"
             alt="Female icon"
             width="65%"
           />
@@ -66,16 +66,22 @@ function StepsSection() {
         <div
           className={`${styles.image} hidden lg:inline-block lg:w-[90%] xl:w-[100%] mb-[-18rem] xl:ml-[10rem]`}
         >
-          <img src="src/assets/imgs/plant-1.webp" alt="Right illustration 1" />
+          <img
+            src="public/assets/imgs/plant-1.webp"
+            alt="Right illustration 1"
+          />
         </div>
         <div
           className={`${styles.image} hidden lg:inline-block lg:w-[100%] xl:w-[100%] lg:mb-[-37rem] lg:ml-[-25rem] xl:mb-[-39rem] xl:ml-[-33rem]`}
         >
-          <img src="src/assets/imgs/plant-2.webp" alt="Left illustration 1" />
+          <img
+            src="public/assets/imgs/plant-2.webp"
+            alt="Left illustration 1"
+          />
         </div>
         <div className={iconStyle}>
           <img
-            src="src/assets/svgs/biotech.svg"
+            src="public/assets/svgs/biotech.svg"
             alt="Biotech icon"
             width="80%"
           />
@@ -87,7 +93,7 @@ function StepsSection() {
           </p>
         </div>
         <div className={`${iconStyle} lg:hidden`}>
-          <img src="src/assets/svgs/code.svg" alt="Code icon" width="65%" />
+          <img src="public/assets/svgs/code.svg" alt="Code icon" width="65%" />
         </div>
         <div className={textStyle}>
           <p className="text-center lg:text-end lg:w-[80%] lg:mr-[-6rem] xl:w-[100%] xl:mr-0">
@@ -96,12 +102,16 @@ function StepsSection() {
           </p>
         </div>
         <div className={`${iconStyle} hidden lg:flex`}>
-          <img src="src/assets/svgs/code.svg" alt="Code icon" width="65%" />
+          <img src="public/assets/svgs/code.svg" alt="Code icon" width="65%" />
         </div>
         <div className="hidden lg:inline"></div>
         <div className="hidden lg:inline"></div>
         <div className={iconStyle}>
-          <img src="src/assets/svgs/trophy.svg" alt="Trophy icon" width="80%" />
+          <img
+            src="public/assets/svgs/trophy.svg"
+            alt="Trophy icon"
+            width="80%"
+          />
         </div>
         <div className={textStyle}>
           <p className="text-center lg:text-start">
@@ -111,7 +121,11 @@ function StepsSection() {
           </p>
         </div>
         <div className={`${iconStyle} lg:hidden`}>
-          <img src="src/assets/svgs/books.svg" alt="Books icon" width="75%" />
+          <img
+            src="public/assets/svgs/books.svg"
+            alt="Books icon"
+            width="75%"
+          />
         </div>
         <div className={textStyle}>
           <p className="text-center lg:text-end">
@@ -121,20 +135,34 @@ function StepsSection() {
           </p>
         </div>
         <div className={`${iconStyle} hidden lg:flex`}>
-          <img src="src/assets/svgs/books.svg" alt="Books icon" width="75%" />
+          <img
+            src="public/assets/svgs/books.svg"
+            alt="Books icon"
+            width="75%"
+          />
         </div>
         <div
           className={`${styles.image} hidden lg:inline-block  lg:w-[90%] lg:mb-[-18rem] lg:ml-[0rem] xl:w-[100%] xl:mb-[-15rem] xl:ml-[8rem]`}
         >
-          <img src="src/assets/imgs/plant-3.webp" alt="Right illustration 2" />
+          <img
+            src="public/assets/imgs/plant-3.webp"
+            alt="Right illustration 2"
+          />
         </div>
         <div
           className={`${styles.image} hidden lg:inline-block  lg:w-[90%] lg:mb-[-23rem] lg:ml-[0rem] xl:w-[100%] xl:mb-[-14rem] xl:ml-[-5rem]`}
         >
-          <img src="src/assets/imgs/plant-4.webp" alt="Left illustration 2" />
+          <img
+            src="public/assets/imgs/plant-4.webp"
+            alt="Left illustration 2"
+          />
         </div>
         <div className={iconStyle}>
-          <img src="src/assets/svgs/sprout.svg" alt="Plant icon" width="80%" />
+          <img
+            src="public/assets/svgs/sprout.svg"
+            alt="Plant icon"
+            width="80%"
+          />
         </div>
         <div className={textStyle}>
           <p className="text-center lg:text-start">
@@ -144,7 +172,7 @@ function StepsSection() {
           </p>
         </div>
         <div className={`${iconStyle} lg:hidden`}>
-          <img src="src/assets/svgs/map.svg" alt="Map icon" width="60%" />
+          <img src="public/assets/svgs/map.svg" alt="Map icon" width="60%" />
         </div>
         <div className={textStyle}>
           <p className="text-center lg:text-end">
@@ -153,7 +181,7 @@ function StepsSection() {
           </p>
         </div>
         <div className={`${iconStyle} hidden lg:flex`}>
-          <img src="src/assets/svgs/map.svg" alt="Map icon" width="60%" />
+          <img src="public/assets/svgs/map.svg" alt="Map icon" width="60%" />
         </div>
       </div>
     </div>

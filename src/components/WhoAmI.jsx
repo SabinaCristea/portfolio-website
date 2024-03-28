@@ -11,7 +11,7 @@ function WhoAmI() {
           <StepsSection />
           <div className="w-[25rem] sm:w-[30rem] mb-[-2rem] md:w-[30rem]  m-auto lg:mb-0 lg:w-[40rem] lg:h-[40rem] lg:absolute lg:bottom-[-10rem] lg:right-0 xl:bottom-[-3rem]">
             <img
-              src="src/assets/imgs/plant-5.webp"
+              src="public/assets/imgs/plant-5.webp"
               alt="Photo of plant 5"
               className="lg:w-[80%] xl:w-[100%]"
             />

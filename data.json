@@ -1,37 +1,37 @@
 {
   "hardSkills": [
     {
-      "src": "src/assets/imgs/skill-react.webp",
+      "src": "public/assets/imgs/skill-react.webp",
       "alt": "React skill",
       "name": "React",
       "details": "From crafting components to managing states, I bring web dreams to life with ease, whether it's routing with React Router, fetching data with React Query, or diving into Redux."
     },
     {
-      "src": "src/assets/imgs/skill-typescript.webp",
+      "src": "public/assets/imgs/skill-typescript.webp",
       "alt": "Typescript skill",
       "name": "Typescript",
       "details": "TypeScript - Discovered at work, now my coding companion. TypeScript's simplicity and reliability won me over in no time."
     },
     {
-      "src": "src/assets/imgs/skill-styling.webp",
+      "src": "public/assets/imgs/skill-styling.webp",
       "alt": "CSS skill",
       "name": "CSS Approaches",
       "details": "From organizing styles with CSS Modules to enhancing flexibility with Sass, seamlessly integrating styles and components with styled-components, and crafting efficient designs with Tailwind CSS – my CSS journey is a dynamic blend of techniques and creativity!"
     },
     {
-      "src": "src/assets/imgs/skill-cicd.webp",
+      "src": "public/assets/imgs/skill-cicd.webp",
       "alt": "CI/CD skill",
       "name": "CI/CD",
       "details": "Proficient in CI/CD, Git (GitHub/Bitbucket), and Agile, I streamline software development with automated processes, ensuring rapid delivery of high-quality code."
     },
     {
-      "src": "src/assets/imgs/skill-database.webp",
+      "src": "public/assets/imgs/skill-database.webp",
       "alt": "Database skill",
       "name": "Database",
       "details": "To power my applications, Supabase and MySQL are my go-to solutions. With Supabase's flexibility and MySQL's reliability, I ensure seamless support for all my projects."
     },
     {
-      "src": "src/assets/imgs/skill-ui.webp",
+      "src": "public/assets/imgs/skill-ui.webp",
       "alt": "UI/UX Design skill",
       "name": "UI/UX Design",
       "details": "Exploring the art of crafting user-centric designs, aiming to create intuitive interfaces that enhance the user experience."
@@ -40,37 +40,37 @@
 
   "softSkills": [
     {
-      "src": "src/assets/imgs/skill-flexible.webp",
+      "src": "public/assets/imgs/skill-flexible.webp",
       "alt": "Flexible & Adaptable skill",
       "name": "Flexible & Adaptable",
       "details": "I easily pivot to meet new challenges and embrace change with enthusiasm. Whether it's adjusting to new technologies or shifting project priorities, I thrive in dynamic environments, bringing versatility and resilience to every task."
     },
     {
-      "src": "src/assets/imgs/skill-learner.webp",
+      "src": "public/assets/imgs/skill-learner.webp",
       "alt": "Fast Learner skill",
       "name": "Fast Learner",
       "details": "A fast learner, I quickly absorb new concepts and technologies, adapting them to solve problems and drive projects forward. With a curious mindset and a hunger for knowledge, I'm always eager to explore new ideas and expand my skills."
     },
     {
-      "src": "src/assets/imgs/skill-details.webp",
+      "src": "public/assets/imgs/skill-details.webp",
       "alt": "Attentive To Details skill",
       "name": "Attentive To Details",
       "details": "I meticulously ensure that every aspect of a project is meticulously crafted. From pixel-perfect designs to error-free code, I prioritize precision in every task, enhancing the overall quality and user experience."
     },
     {
-      "src": "src/assets/imgs/skill-analytical.webp",
+      "src": "public/assets/imgs/skill-analytical.webp",
       "alt": "Analytical Thinking skill",
       "name": "Analytical Thinking",
       "details": "Analytical by nature, I dissect problems to uncover insights and devise strategic solutions that drive projects forward."
     },
     {
-      "src": "src/assets/imgs/skill-organized.webp",
+      "src": "public/assets/imgs/skill-organized.webp",
       "alt": "Highly Organized skill",
       "name": "Highly Organized",
       "details": "Highly organized and a lover of to-do lists, I thrive on structure and efficiency. With meticulous planning and prioritization, I ensure tasks are completed with precision and deadlines are met with ease."
     },
     {
-      "src": "src/assets/imgs/skill-team.webp",
+      "src": "public/assets/imgs/skill-team.webp",
       "alt": "Team Oriented skill",
       "name": "Team Oriented",
       "details": "By fostering open communication and mutual respect, I contribute to a positive team dynamic, working collectively towards shared goals and driving success together."
@@ -78,35 +78,35 @@
   ],
   "projects": [
     {
-      "src": "/assets/imgs/project-quiz.webp",
+      "src": "public/assets/imgs/project-quiz.webp",
       "alt": "Project Quiz",
       "codeLink": "https://github.com/SabinaCristea/frontend-quiz",
       "siteLink": "https://frontend-quiz-sabina.netlify.app/",
       "description": "A responsive quiz app crafted using React, TypeScript, Vite, and Context API. Choose from 4 quiz types for an engaging learning experience, enhanced with a sleek dark mode for comfortable viewing in any environment."
     },
     {
-      "src": "/assets/imgs/project-wild-oasis.webp",
+      "src": "public/assets/imgs/project-wild-oasis.webp",
       "alt": "Project Wild Oasis",
       "codeLink": "https://github.com/SabinaCristea/the-wild-oasis",
       "siteLink": "https://the-wild-oasis-sabina.netlify.app/login",
       "description": "An all-inclusive hotel management application designed for employees, featuring robust authentication, reservation management (booking, updating, and deleting reservation), dark mode for comfortable usage, and intuitive sorting and filtering of information. Developed as part of the Ultimate React course by Jonas Schmedtmann, utilizing React Router, Styled Components, Vite, Context API, React Query, Recharts, Supabase, and other tools."
     },
     {
-      "src": "/assets/imgs/project-worldwise.webp",
+      "src": "public/assets/imgs/project-worldwise.webp",
       "alt": "Project WorldWise",
       "codeLink": "https://github.com/SabinaCristea/worldwise",
       "siteLink": "https://worldwise-sabina.netlify.app/",
       "description": "WorldWise is your go-to travel companion, allowing you to effortlessly track the cities you've visited worldwide, complete with dates and personalized trip notes. Seamlessly login to access your travel history and enrich your journey experiences. Powered by React Datepicker, Leaflet for map integration, and leveraging Vite and Router for smooth navigation and efficient performance. Unlock the world with WorldWise."
     },
     {
-      "src": "/assets/imgs/project-age-calculator.webp",
+      "src": "public/assets/imgs/project-age-calculator.webp",
       "alt": "Project Age Calculator",
       "codeLink": "https://github.com/SabinaCristea/age-calculator-app",
       "siteLink": "https://age-calculator-app-sabina.netlify.app/",
       "description": "An intuitive age calculator app built with Flexbox, CSS Grid, and Vanilla JavaScript. Simply input your birthdate, and instantly calculate your age. Enjoy a responsive design that adapts seamlessly to various screen sizes. Experience real-time validation to catch errors and ensure accurate inputs, enhancing user experience and reliability."
     },
     {
-      "src": "/assets/imgs/project-pizza.webp",
+      "src": "public/assets/imgs/project-pizza.webp",
       "alt": "Project Pizza",
       "codeLink": "https://github.com/SabinaCristea/fast-react-pizza",
       "siteLink": "https://react-pizza-sabina.netlify.app/",

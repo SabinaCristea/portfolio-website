@@ -21,7 +21,7 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="src/assets/svgs/icons8-linkedin.svg"
+                  src="public/assets/svgs/icons8-linkedin.svg"
                   alt="LinkedIn Icon"
                   className="w-[6rem] h-[6rem]"
                 />
@@ -33,7 +33,7 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="src/assets/svgs/icons8-github.svg"
+                  src="public/assets/svgs/icons8-github.svg"
                   alt="Github Icon"
                   className="w-[6rem] h-[6rem]"
                 />
@@ -45,7 +45,7 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="src/assets/svgs/icons8-instagram.svg"
+                  src="public/assets/svgs/icons8-instagram.svg"
                   alt="Instagram Icon"
                   className="w-[6rem] h-[6rem]"
                 />
@@ -57,7 +57,7 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="src/assets/svgs/icons8-facebook.svg"
+                  src="public/assets/svgs/icons8-facebook.svg"
                   alt="Facebbok Icon"
                   className="w-[6rem] h-[6rem]"
                 />

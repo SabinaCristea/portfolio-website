@@ -22,7 +22,7 @@ function NavLink({
     >
       {children}
       <img
-        src={`src/assets/svgs/nav-${navNo}.svg`}
+        src={`public/assets/svgs/nav-${navNo}.svg`}
         alt={alt}
         className="opacity-[0.28] md:w-[90%] lg:w-[100%]"
       />
