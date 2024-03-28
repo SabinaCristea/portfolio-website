@@ -33,7 +33,7 @@ function NavBar({ onClose }) {
   }, []);
 
   const navTextStyle =
-    "md:top-[3rem] lg:text-[1.8rem] absolute lg:top-[3.5rem] tracking-[0.2rem]";
+    "md:top-[3rem] md:text-[1.4rem] lg:text-[1.8rem] absolute lg:top-[3.5rem] tracking-[0.2rem]";
 
   const navLinkStyle = `${styles.navLink} flex flex-col items-center justify-center text-[var(--color-black)] relative cursor-pointer select-none active:filter-none hover:text-[var(--color-pink-primary)] hover:drop-shadow-navLink visited:filter-none`;
 
@@ -53,7 +53,7 @@ function NavBar({ onClose }) {
             onclose={onClose}
           >
             <p
-              className={`${navTextStyle} top-[3.5rem] md:left-[3rem] lg:left-[auto] `}
+              className={`${navTextStyle} top-[3.5rem] md:left-[3.3rem] lg:left-[auto] `}
             >
               HOME
             </p>
@@ -69,7 +69,7 @@ function NavBar({ onClose }) {
             onclose={onClose}
           >
             <p
-              className={`${navTextStyle} top-[3.5rem] md:left-[2.5rem] lg:left-[auto] `}
+              className={`${navTextStyle} top-[3.5rem] md:left-[3.3rem] lg:left-[auto] `}
             >
               ABOUT ME
             </p>
@@ -85,7 +85,7 @@ function NavBar({ onClose }) {
             onclose={onClose}
           >
             <p
-              className={`${navTextStyle} top-[3.1rem] md:left-[4.2rem] lg:left-[auto] `}
+              className={`${navTextStyle} top-[3.1rem] md:left-[5.2rem] lg:left-[auto] `}
             >
               SKILLS & EXPERIENCE
             </p>
@@ -101,7 +101,7 @@ function NavBar({ onClose }) {
             onclose={onClose}
           >
             <p
-              className={`${navTextStyle} top-[3.5rem] md:left-[3.5rem] lg:left-[auto] `}
+              className={`${navTextStyle} top-[3.5rem] md:left-[4.3rem] lg:left-[auto] `}
             >
               PROJECTS
             </p>
