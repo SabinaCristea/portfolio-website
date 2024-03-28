@@ -78,28 +78,28 @@
   ],
   "projects": [
     {
-      "src": "project-quiz.webp",
+      "src": "../assets/imgs/project-quiz.webp",
       "alt": "Project Quiz",
       "codeLink": "https://github.com/SabinaCristea/frontend-quiz",
       "siteLink": "https://frontend-quiz-sabina.netlify.app/",
       "description": "A responsive quiz app crafted using React, TypeScript, Vite, and Context API. Choose from 4 quiz types for an engaging learning experience, enhanced with a sleek dark mode for comfortable viewing in any environment."
     },
     {
-      "src": "project-wild-oasis.webp",
+      "src": "../assets/imgs/project-wild-oasis.webp",
       "alt": "Project Wild Oasis",
       "codeLink": "https://github.com/SabinaCristea/the-wild-oasis",
       "siteLink": "https://the-wild-oasis-sabina.netlify.app/login",
       "description": "An all-inclusive hotel management application designed for employees, featuring robust authentication, reservation management (booking, updating, and deleting reservation), dark mode for comfortable usage, and intuitive sorting and filtering of information. Developed as part of the Ultimate React course by Jonas Schmedtmann, utilizing React Router, Styled Components, Vite, Context API, React Query, Recharts, Supabase, and other tools."
     },
     {
-      "src": "project-worldwise.webp",
+      "src": "../assets/imgs/project-worldwise.webp",
       "alt": "Project WorldWise",
       "codeLink": "https://github.com/SabinaCristea/worldwise",
       "siteLink": "https://worldwise-sabina.netlify.app/",
       "description": "WorldWise is your go-to travel companion, allowing you to effortlessly track the cities you've visited worldwide, complete with dates and personalized trip notes. Seamlessly login to access your travel history and enrich your journey experiences. Powered by React Datepicker, Leaflet for map integration, and leveraging Vite and Router for smooth navigation and efficient performance. Unlock the world with WorldWise."
     },
     {
-      "src": "project-age-calculator.webp",
+      "src": "../assets/imgs/project-age-calculator.webp",
       "alt": "Project Age Calculator",
       "codeLink": "https://github.com/SabinaCristea/age-calculator-app",
       "siteLink": "https://age-calculator-app-sabina.netlify.app/",
