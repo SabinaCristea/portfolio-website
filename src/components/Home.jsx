@@ -1,4 +1,4 @@
-import earthCoverImage from "../../assets/imgs/earth-cover.webp";
+import earthCoverImage from "/assets/imgs/earth-cover.webp";
 
 function Home() {
   return (
