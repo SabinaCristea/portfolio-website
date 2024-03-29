@@ -4,66 +4,68 @@ import { useEffect, useRef } from "react";
 function StepsSection() {
   const stepsRef = useRef(null);
 
+  // useEffect(() => {
+  //   const childElements =
+  //     stepsRef.current.querySelectorAll(`.stepsContent > *`);
+
+  //   childElements.forEach((element) => {
+  //     let isVisible = false;
+  //     const observer = new IntersectionObserver(
+  //       (entries) => {
+  //         entries.forEach((entry) => {
+  //           isVisible = entry.isIntersecting;
+  //           if (isVisible) {
+  //             element.classList.add(styles.show);
+  //           }
+  //           // else {
+  //           //   element.classList.remove(styles.show); // Remove class when not visible
+  //           // }
+  //         });
+  //       },
+  //       {
+  //         threshold: 0,
+  //       }
+  //     );
+  //     observer.observe(element);
+
+  //     // Cleanup function to disconnect observer on unmount
+  //     return () => observer.unobserve(element);
+  //   });
+  // }, []);
+
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.show);
+          }
+          //  else {
+          //   entry.target.classList.remove(styles.show);
+          // }
+        });
+      },
+      {
+        threshold: 0,
+        rootMargin: "100px 0px",
+      }
+    );
+
     const childElements =
       stepsRef.current.querySelectorAll(`.stepsContent > *`);
 
     childElements.forEach((element) => {
-      let isVisible = false;
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            isVisible = entry.isIntersecting;
-            if (isVisible) {
-              element.classList.add(styles.show);
-            } else {
-              element.classList.remove(styles.show); // Remove class when not visible
-            }
-          });
-        },
-        {
-          threshold: 0,
-        }
-      );
+      // debouncedObserver(element);
+
       observer.observe(element);
-
-      // Cleanup function to disconnect observer on unmount
-      return () => observer.unobserve(element);
     });
+
+    return () => {
+      childElements.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
   }, []);
-
-  // useEffect(() => {
-  // const observer = new IntersectionObserver(
-  //   (entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add(styles.show);
-  //       }
-  //       //  else {
-  //       //   entry.target.classList.remove(styles.show);
-  //       // }
-  //     });
-  //   },
-  //   {
-  //     threshold: 0,
-  //   }
-  // );
-
-  // const childElements =
-  //   stepsRef.current.querySelectorAll(`.stepsContent > *`);
-
-  //   childElements.forEach((element) => {
-  //     // debouncedObserver(element);
-
-  //     observer.observe(element);
-  //   });
-
-  //   return () => {
-  //     childElements.forEach((element) => {
-  //       observer.unobserve(element);
-  //     });
-  //   };
-  // }, []);
 
   const iconStyle = `${styles.stepIcon} w-[6rem] h-[6rem] md:w-[8rem] md:h-[8rem] lg:w-[8rem] lg:h-[8rem] xl:w-[9rem] xl:h-[9rem] rounded-[50%] flex justify-center items-center z-[99] bg-[var(--color-orange-steps)]`;
 
