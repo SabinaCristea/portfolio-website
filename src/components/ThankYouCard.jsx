@@ -1,9 +1,8 @@
-import React from "react";
 import { GITHUB_ACCOUNT, LINKEDIN_ACCOUNT } from "../utils/accounts";
 import Button from "./Button";
 import Modal from "./Modal";
 
-const ThankYouCard = React.memo(function ThankYouCard({ onClose }) {
+function ThankYouCard({ onClose }) {
   return (
     <Modal
       style={{
@@ -53,6 +52,6 @@ const ThankYouCard = React.memo(function ThankYouCard({ onClose }) {
       </div>
     </Modal>
   );
-});
+}
 
 export default ThankYouCard;

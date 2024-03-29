@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Tooltip = React.memo(function Tooltip({ text, children }) {
+function Tooltip({ text, children }) {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const handleMouseEnter = () => {
@@ -23,6 +23,6 @@ const Tooltip = React.memo(function Tooltip({ text, children }) {
       )}
     </div>
   );
-});
+}
 
 export default Tooltip;
