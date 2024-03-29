@@ -18,12 +18,12 @@ function Skills({ data, headline }) {
 
       <div className="flex flex-row lg:flex-col">
         <div
-          className={`flex flex-col lg:flex-row sm:gap-[0.7rem] md:gap-[1rem] lg:gap-0`}
+          className={`flex flex-col lg:flex-row sm:gap-[0.7rem] md:gap-[1rem] justify-between`}
         >
           {data.map((skill, index) => (
             <SkillTab
               key={index}
-              src={skill.src}
+              src={skill.srcTab}
               alt={skill.alt}
               isActive={activeTabIndex === index}
               handleTabOpen={() => handleTabOpen(index)}

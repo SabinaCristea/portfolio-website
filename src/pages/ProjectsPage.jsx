@@ -26,12 +26,12 @@ function ProjectsPage() {
       <header className="text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] xl:text-[4rem] drop-shadow-3xl md:mb-[0rem] lg:mb-[6rem] w-[30rem] sm:w-[auto] text-center">
         Explore a part of my portfolio 😄
       </header>
-      <div className=" md:hidden ">
-        <Tooltip text="Swipe or click on the carousel for other projects">
+      <div>
+        <Tooltip text="Click or swipe the carousel for other projects">
           <img
             src="/assets/svgs/info.svg"
             alt="Carousel info"
-            className="w-[4rem]"
+            className="w-[3rem]"
           />
         </Tooltip>
       </div>
@@ -58,7 +58,12 @@ function ProjectsPage() {
       <img
         src="/assets/imgs/continuously-growing.webp"
         alt="Winning illustration"
-        className="w-[30rem] sm:w-[35rem] md:w-[40rem] lg:w-[45rem] xl:w-[55rem] 2xl:w-[63.3rem]"
+        className="hidden sm:block sm:w-[35rem] md:w-[40rem] lg:w-[45rem] xl:w-[55rem] 2xl:w-[63.3rem]"
+      />
+      <img
+        src="/assets/imgs/continuously-growing-mobile.webp"
+        alt="Winning illustration"
+        className="w-[30rem]  sm:hidden"
       />
     </div>
   );

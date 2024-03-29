@@ -14,7 +14,7 @@ function NavBar({ onClose }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isSticky = window.scrollY > 1050 && window.innerWidth > 768;
+      const isSticky = window.scrollY > 1200 && window.innerWidth > 768;
       setScroll(isSticky);
 
       const nav = document.querySelector("nav");

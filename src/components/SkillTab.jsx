@@ -8,7 +8,11 @@ function SkillTab({ src, alt, children, isActive, handleTabOpen }) {
       className={isActive ? activeStyle : tabStyle}
       onClick={handleTabOpen}
     >
-      <img src={src} alt={alt} className="w-[40%] sm:w-[40%] lg:w-[80%]" />
+      <img
+        src={src}
+        alt={alt}
+        className="w-[40%] sm:w-[40%] md:w-[9.2rem] lg:w-[80%] "
+      />
       <div className="flex justify-center items-center w-[60%] lg:w-[auto]">
         <p className="text-[1.2rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.4rem] 2xl:text-[1.5rem]">
           {children}

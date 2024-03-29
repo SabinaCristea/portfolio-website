@@ -34,20 +34,6 @@ function SkillsSlider() {
     setBtnRightVisible(true);
   }, [curSlide]);
 
-  // const handleSwipe = (event) => {
-  //   const touchStartX = event.touches[0].clientX;
-  //   const touchEndX = event.changedTouches[0].clientX;
-  //   const difference = touchStartX - touchEndX;
-
-  //   if (Math.abs(difference) > 50) {
-  //     if (difference > 0) {
-  //       nextSlide();
-  //     } else {
-  //       prevSlide();
-  //     }
-  //   }
-  // };
-
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "ArrowLeft") {

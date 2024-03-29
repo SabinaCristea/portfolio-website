@@ -40,6 +40,12 @@ function ThankYouCard() {
           <img
             src="/assets/imgs/lets-connect.webp"
             alt="Connect illustration"
+            className="hidden sm:block"
+          />
+          <img
+            src="/assets/imgs/lets-connect-mobile.webp"
+            alt="Connect illustration"
+            className="sm:hidden"
           />
         </div>
       </div>

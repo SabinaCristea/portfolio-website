@@ -2,36 +2,42 @@
   "hardSkills": [
     {
       "src": "/assets/imgs/skill-react.webp",
+      "srcTab": "/assets/imgs/skill-react-tab.webp",
       "alt": "React skill",
       "name": "React",
       "details": "From crafting components to managing states, I bring web dreams to life with ease, whether it's routing with React Router, fetching data with React Query, or diving into Redux."
     },
     {
       "src": "/assets/imgs/skill-typescript.webp",
+      "srcTab": "/assets/imgs/skill-typescript-tab.webp",
       "alt": "Typescript skill",
       "name": "Typescript",
       "details": "TypeScript - Discovered at work, now my coding companion. TypeScript's simplicity and reliability won me over in no time."
     },
     {
       "src": "/assets/imgs/skill-styling.webp",
+      "srcTab": "/assets/imgs/skill-styling-tab.webp",
       "alt": "CSS skill",
       "name": "CSS Approaches",
       "details": "From organizing styles with CSS Modules to enhancing flexibility with Sass, seamlessly integrating styles and components with styled-components, and crafting efficient designs with Tailwind CSS – my CSS journey is a dynamic blend of techniques and creativity!"
     },
     {
       "src": "/assets/imgs/skill-cicd.webp",
+      "srcTab": "/assets/imgs/skill-cicd-tab.webp",
       "alt": "CI/CD skill",
       "name": "CI/CD",
       "details": "Proficient in CI/CD, Git (GitHub/Bitbucket), and Agile, I streamline software development with automated processes, ensuring rapid delivery of high-quality code."
     },
     {
       "src": "/assets/imgs/skill-database.webp",
+      "srcTab": "/assets/imgs/skill-database-tab.webp",
       "alt": "Database skill",
       "name": "Database",
       "details": "To power my applications, Supabase and MySQL are my go-to solutions. With Supabase's flexibility and MySQL's reliability, I ensure seamless support for all my projects."
     },
     {
       "src": "/assets/imgs/skill-ui.webp",
+      "srcTab": "/assets/imgs/skill-ui-tab.webp",
       "alt": "UI/UX Design skill",
       "name": "UI/UX Design",
       "details": "Exploring the art of crafting user-centric designs, aiming to create intuitive interfaces that enhance the user experience."
@@ -41,36 +47,42 @@
   "softSkills": [
     {
       "src": "/assets/imgs/skill-flexible.webp",
+      "srcTab": "/assets/imgs/skill-flexible-tab.webp",
       "alt": "Flexible & Adaptable skill",
       "name": "Flexible & Adaptable",
       "details": "I easily pivot to meet new challenges and embrace change with enthusiasm. Whether it's adjusting to new technologies or shifting project priorities, I thrive in dynamic environments, bringing versatility and resilience to every task."
     },
     {
       "src": "/assets/imgs/skill-learner.webp",
+      "srcTab": "/assets/imgs/skill-learner-tab.webp",
       "alt": "Fast Learner skill",
       "name": "Fast Learner",
       "details": "A fast learner, I quickly absorb new concepts and technologies, adapting them to solve problems and drive projects forward. With a curious mindset and a hunger for knowledge, I'm always eager to explore new ideas and expand my skills."
     },
     {
       "src": "/assets/imgs/skill-details.webp",
+      "srcTab": "/assets/imgs/skill-details-tab.webp",
       "alt": "Attentive To Details skill",
       "name": "Attentive To Details",
       "details": "I meticulously ensure that every aspect of a project is meticulously crafted. From pixel-perfect designs to error-free code, I prioritize precision in every task, enhancing the overall quality and user experience."
     },
     {
       "src": "/assets/imgs/skill-analytical.webp",
+      "srcTab": "/assets/imgs/skill-analytical-tab.webp",
       "alt": "Analytical Thinking skill",
       "name": "Analytical Thinking",
       "details": "Analytical by nature, I dissect problems to uncover insights and devise strategic solutions that drive projects forward."
     },
     {
       "src": "/assets/imgs/skill-organized.webp",
+      "srcTab": "/assets/imgs/skill-organized-tab.webp",
       "alt": "Highly Organized skill",
       "name": "Highly Organized",
       "details": "Highly organized and a lover of to-do lists, I thrive on structure and efficiency. With meticulous planning and prioritization, I ensure tasks are completed with precision and deadlines are met with ease."
     },
     {
       "src": "/assets/imgs/skill-team.webp",
+      "srcTab": "/assets/imgs/skill-team-tab.webp",
       "alt": "Team Oriented skill",
       "name": "Team Oriented",
       "details": "By fostering open communication and mutual respect, I contribute to a positive team dynamic, working collectively towards shared goals and driving success together."
