@@ -58,12 +58,7 @@ function ProjectsPage() {
       <img
         src="/assets/imgs/continuously-growing.webp"
         alt="Winning illustration"
-        className="hidden sm:block sm:w-[35rem] md:w-[40rem] lg:w-[45rem] xl:w-[55rem] 2xl:w-[63.3rem]"
-      />
-      <img
-        src="/assets/imgs/continuously-growing-mobile.webp"
-        alt="Winning illustration"
-        className="w-[30rem]  sm:hidden"
+        className="w-[30rem] sm:w-[35rem] md:w-[40rem] lg:w-[45rem] xl:w-[55rem] 2xl:w-[63.3rem]"
       />
     </div>
   );

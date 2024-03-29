@@ -13,12 +13,7 @@ function SkillsPage() {
       <img
         src="/assets/imgs/productive.webp"
         alt="Productive team illustration"
-        className="hidden sm:block mb-[-1rem] md:mt-[4rem] w-[35rem] sm:w-[40rem] md:w-[45rem] lg:w-[50rem] xl:w-[auto]"
-      />
-      <img
-        src="/assets/imgs/productive-mobile.webp"
-        alt="Productive team illustration"
-        className="mb-[-1rem] sm:hidden"
+        className="mb-[-1rem] md:mt-[4rem] w-[35rem] sm:w-[40rem] md:w-[45rem] lg:w-[50rem] xl:w-[auto]"
       />
     </div>
   );
