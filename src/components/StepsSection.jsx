@@ -5,23 +5,51 @@ function StepsSection() {
   const stepsRef = useRef(null);
 
   useEffect(() => {
+    const debounce = (callback, delay) => {
+      let timer;
+      return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          callback(...args);
+        }, delay);
+      };
+    };
+
     const observer = new IntersectionObserver(
-      (entries) => {
+      debounce((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add(styles.show);
           }
         });
-      },
+      }, 10), // Adjust delay as needed (in milliseconds)
       {
         threshold: 0,
       }
     );
 
+    // const observer = new IntersectionObserver(
+    //   (entries) => {
+    //     entries.forEach((entry) => {
+    //       if (entry.isIntersecting) {
+    //         entry.target.classList.add(styles.show);
+    //       }
+    //       //  else {
+    //       //   entry.target.classList.remove(styles.show);
+    //       // }
+    //     });
+    //   },
+    //   {
+    //     threshold: 0,
+    //   }
+    // );
+
     const childElements =
       stepsRef.current.querySelectorAll(`.stepsContent > *`);
 
     childElements.forEach((element) => {
+      // debouncedObserver(element);
+
       observer.observe(element);
     });
 
