@@ -5,6 +5,7 @@ import { useState } from "react";
 import ThankYouCard from "../components/ThankYouCard";
 import useOverflowControl from "../hooks/useOverflowControl";
 import Confetti from "../components/Confetti";
+import Tooltip from "../components/Tooltip";
 
 function ProjectsPage() {
   const [btnClicked, setBtnClicked] = useState(false);
@@ -25,7 +26,15 @@ function ProjectsPage() {
       <header className="text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] xl:text-[4rem] drop-shadow-3xl md:mb-[0rem] lg:mb-[6rem] w-[30rem] sm:w-[auto] text-center">
         Explore a part of my portfolio 😄
       </header>
-
+      <div className=" md:hidden ">
+        <Tooltip text="Swipe or click on the carousel for other projects">
+          <img
+            src="/assets/svgs/info.svg"
+            alt="Carousel info"
+            className="w-[4rem]"
+          />
+        </Tooltip>
+      </div>
       <ProjectsCarousel />
       <p className="mt-[25rem] sm:mt-[30rem] md:mt-[35rem] lg:mt-[45rem] xl:mt-[50rem] 2xl:mt-[55rem] text-[2rem] text-center sm:text-[2.3rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] drop-shadow-3xl w-[30rem] sm:w-[auto]">
         Let`s create something remarkable together!

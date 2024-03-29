@@ -1,0 +1,33 @@
+@media (min-width: 1280px) {
+  .btnSoftSkills {
+    right: -25rem;
+  }
+
+  @supports (-moz-appearance: none) {
+    .btnSoftSkills {
+      right: -15rem;
+    }
+  }
+
+  @supports (-webkit-appearance: none) {
+    .btnSoftSkills {
+      right: -15rem;
+    }
+  }
+
+  .btnHardSkills {
+    left: -25rem;
+  }
+
+  @supports (-moz-appearance: none) {
+    .btnHardSkills {
+      left: -15rem;
+    }
+  }
+
+  @supports (-webkit-appearance: none) {
+    .btnHardSkills {
+      left: -15rem;
+    }
+  }
+}

@@ -13,7 +13,7 @@ function SkillDetails({ src, alt, details }) {
       <img
         src={src}
         alt={alt}
-        className="w-[80%] sm:w-[70%] md:w-[70%] lg:w-[35%] "
+        className="w-[80%] sm:w-[70%] md:w-[70%] lg:w-[25.2rem] xl:w-[28.7rem] 2xl:w-[35.7rem]"
       />
     </div>
   );

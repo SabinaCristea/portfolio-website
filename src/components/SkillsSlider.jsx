@@ -4,6 +4,7 @@ import Skills from "./Skills";
 import { getData } from "../utils/getData";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
+import styles from "./SkillsSlider.module.css";
 
 function SkillsSlider() {
   const {
@@ -98,8 +99,7 @@ function SkillsSlider() {
 
   const slideTransition =
     "transition-transform duration-[0.8s] absolute w-[100%] top-0";
-  const btnStyle =
-    "absolute z-10 flex flex-col items-center lg:top-[50%] lg:translate-y-[-50%]";
+  const btnStyle = `absolute z-10 flex flex-col items-center lg:top-[50%] lg:translate-y-[-50%]`;
 
   return (
     <div
@@ -111,7 +111,7 @@ function SkillsSlider() {
       {isLoading && <Loader height={"100%"} />}
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       {skillsData && (
-        <div className="relative w-[30rem] sm:w-[55rem] md:w-[65rem] lg:w-[80rem] xl:w-[90rem] 2xl:w-[110rem] h-[55rem] sm:h-[60rem] md:h-[65rem] lg:h-[50rem] xl:h-[55rem] 2xl:h-[57.7rem] mt-[4rem] md:mt-[7rem] mb-[3rem] mx-[auto]">
+        <div className="relative w-[30rem] sm:w-[55rem] md:w-[65rem] lg:w-[80rem] xl:w-[90rem] 2xl:w-[110rem] h-[55rem] sm:h-[60rem] md:h-[65rem] lg:h-[50rem] xl:h-[55rem] 2xl:h-[57.7rem] mt-[4rem] md:mt-[7rem] mb-[3rem] mx-[auto] flex justify-center">
           <div
             className={slideTransition}
             style={{ transform: `translateX(-${curSlide * 150}%) ` }}
@@ -127,13 +127,13 @@ function SkillsSlider() {
           </div>
 
           <button
-            className={`${btnStyle} top-[90%] sm:right-[12rem] sm:top-[85%] md:right-[-10rem] md:top-[92%] lg:right-[-20rem] xl:right-[-25rem] ${btnRightVisible ? "" : "hidden"}`}
+            className={`${btnStyle} top-[90%] sm:top-[85%] md:right-[0rem] md:top-[92%] lg:right-[-10rem] xl:right-[-25rem] ${btnRightVisible ? "" : "hidden"} ${styles.btnSoftSkills}`}
             onClick={nextSlide}
           >
             <img
               src="/assets/svgs/arrow-right.svg"
               alt="Arrow right"
-              className="w-[10%] sm:w-[15%] xl:w-[20%]"
+              className="w-[3rem] sm:w-[4.5rem] xl:w-[6rem]"
             />
             <p className="text-[1.2rem] sm:text-[1.4rem] xl:text-[1.6rem]">
               SOFT SKILLS
@@ -141,13 +141,13 @@ function SkillsSlider() {
           </button>
 
           <button
-            className={`${btnStyle} top-[90%] sm:left-[12rem] sm:top-[85%] md:left-[-10rem] md:top-[92%] lg:left-[-20rem] xl:left-[-25rem] ${btnLeftVisible ? "" : "hidden"}`}
+            className={`${btnStyle} top-[90%] sm:top-[85%] md:left-[0rem] md:top-[92%] lg:left-[-10rem] xl:left-[-25rem] ${btnLeftVisible ? "" : "hidden"} ${styles.btnHardSkills}`}
             onClick={prevSlide}
           >
             <img
               src="/assets/svgs/arrow-left.svg"
               alt="Arrow left"
-              className="w-[10%] sm:w-[15%] xl:w-[20%]"
+              className="w-[3rem] sm:w-[4.5rem] xl:w-[6rem]"
             />
             <p className="text-[1.2rem] sm:text-[1.4rem] xl:text-[1.6rem]">
               EXPERTISE
