@@ -4,12 +4,12 @@ import CarouselCard from "./CarouselCard";
 import { v4 as uuidv4 } from "uuid";
 import Carroussel from "./Carroussel";
 import ErrorMessage from "./ErrorMessage";
-import { useState } from "react";
+import React, { useState } from "react";
 import Modal from "./Modal";
 import Loader from "./Loader";
 import useOverflowControl from "../hooks/useOverflowControl";
 
-function ProjectsCarousel() {
+const ProjectsCarousel = React.memo(function ProjectsCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [detailsBtnClicked, setDetailsBtnClicked] = useState(false);
 
@@ -85,6 +85,6 @@ function ProjectsCarousel() {
       )}
     </div>
   );
-}
+});
 
 export default ProjectsCarousel;

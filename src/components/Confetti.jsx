@@ -1,6 +1,7 @@
+import React from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 
-function Confetti({ setConfettiCompleted }) {
+const Confetti = React.memo(function Confetti({ setConfettiCompleted }) {
   return (
     <ConfettiExplosion
       onComplete={() => setConfettiCompleted(true)}
@@ -17,6 +18,6 @@ function Confetti({ setConfettiCompleted }) {
       ]}
     />
   );
-}
+});
 
 export default Confetti;

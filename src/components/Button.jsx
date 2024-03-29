@@ -1,6 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-function Button({ to, children, onClick }) {
+const Button = React.memo(function Button({ to, children, onClick }) {
   const btnStyle = `flex items-center tracking-wider rounded-[100rem] leading-4 relative link:no-underline link:transition-all link:duration-[0.4s] visited:no-underline visited:transition-all visited:duration-[0.4s] hover:translate-y-[-0.3rem] hover:text-[var(--color-pink-primary)] hover:shadow-btnHover after:hover:scale-x-[1.2] after:hover:scale-y-[1.4] after:hover:opacity-0 active:translate-y-[-0.1rem] active:shadow-none after:inline-block after:h-[100%] after:w-[100%] after:rounded-[10rem] after:absolute after:top-0 after:left-0 after:z-[-1] after:transition-all after:duration-[0.4s] justify-center`;
 
   if (to) {
@@ -27,6 +28,5 @@ function Button({ to, children, onClick }) {
         {children}
       </button>
     );
-}
-
+});
 export default Button;
