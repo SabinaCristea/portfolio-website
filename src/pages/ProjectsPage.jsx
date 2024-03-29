@@ -43,15 +43,7 @@ function ProjectsPage() {
         <Button onClick={handleShowModal}>Click here! :)</Button>
         {btnClicked && <Confetti setConfettiCompleted={setConfettiCompleted} />}
         {confettiCompleted && (
-          <Modal
-            style={{
-              backgroundColor: "var(--color-pink-secondary)",
-            }}
-            onClose={() => setConfettiCompleted(false)}
-            className="w-[32rem] sm:w-[40rem] md:w-[45rem] lg:w-[70rem] lg:h-[45rem] xl:w-[80rem] xl:h-[55rem]"
-          >
-            <ThankYouCard />
-          </Modal>
+          <ThankYouCard onClose={() => setConfettiCompleted(false)} />
         )}
       </div>
 

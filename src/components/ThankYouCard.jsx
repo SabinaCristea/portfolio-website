@@ -1,9 +1,16 @@
 import { GITHUB_ACCOUNT, LINKEDIN_ACCOUNT } from "../utils/accounts";
 import Button from "./Button";
+import Modal from "./Modal";
 
-function ThankYouCard() {
+function ThankYouCard({ onClose }) {
   return (
-    <div>
+    <Modal
+      style={{
+        backgroundColor: "var(--color-pink-secondary)",
+      }}
+      onClose={onClose}
+      className="w-[32rem] sm:w-[40rem] md:w-[45rem] lg:w-[70rem] lg:h-[45rem] xl:w-[80rem] xl:h-[55rem]"
+    >
       <div className="flex flex-col items-center justify-center">
         <div className="md:w-[30rem] lg:w-[35rem] xl:w-[45rem]">
           <img
@@ -43,7 +50,7 @@ function ThankYouCard() {
           />
         </div>
       </div>
-    </div>
+    </Modal>
   );
 }
 
