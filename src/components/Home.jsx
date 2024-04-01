@@ -3,7 +3,7 @@ import earthCoverImage from "/assets/imgs/earth-cover.webp";
 function Home() {
   return (
     <div
-      className="flex flex-col items-center w-[100vw] h-[40vh] sm:h-[50vh] md:h-[70vh] lg:h-[90vh] pt-[13%] sm:pt-[4vh] md:pt-[16vh] lg:pt-[13vh] xl:pt-[9%] 2xl:pt-[8%] md:mt-[-10rem]
+      className="flex flex-col items-center w-[100%] h-[40vh] sm:h-[50vh] md:h-[70vh] lg:h-[90vh] pt-[13%] sm:pt-[4vh] md:pt-[16vh] lg:pt-[13vh] xl:pt-[9%] 2xl:pt-[8%] md:mt-[-10rem]
                  after:z-[-1] overlay-hidden
                  after:h-[40vh] sm:after:h-[50vh] md:after:h-[70vh] lg:after:h-[90vh] after:w-[100%] after:absolute after:top-0 
                  after:left-0 after:outline-dotted after:outline-[0.7rem] md:after:outline-[1rem] after:outline-[var(--color-green)]"
