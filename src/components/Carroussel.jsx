@@ -19,14 +19,14 @@ export default function Carroussel(props) {
   }, [props.offset, props.showArrows]);
 
   const customStyles = (offsetFromRadius) => {
-    const blurAmount = Math.abs(offsetFromRadius) * 9;
+    // const blurAmount = Math.abs(offsetFromRadius) * 9;
     let angle = offsetFromRadius !== 0 ? -33 : -25;
     let scale = 1 - Math.abs(offsetFromRadius) / 2.5;
 
     return {
-      opacity: 1 - Math.abs(offsetFromRadius) / 100,
+      // opacity: 1 - Math.abs(offsetFromRadius) / 100,
       transform: `rotate(${angle}deg) scale(${scale}) `,
-      filter: `blur(${blurAmount}px)`,
+      // filter: `blur(${blurAmount}px)`,
     };
   };
 
