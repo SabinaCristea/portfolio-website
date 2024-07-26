@@ -125,14 +125,14 @@
       "description": "A dynamic pizza ordering application developed with React, Redux, Vite, and Tailwind CSS. Browse through a diverse selection of pizzas, add items to your basket, and effortlessly modify quantities. Utilizing APIs for geocoding and pizza listings, the app enhances user convenience. Receive a unique order number and access order history by searching with the order number. Seamlessly place orders through a comprehensive form, with the option to prioritize orders, adjusting pricing and delivery time accordingly."
     },
     {
-      "src": "/assets/imgs/project-pomodoro.png",
+      "src": "/assets/imgs/project-pomodoro.webp",
       "alt": "Project Pomodoro",
       "codeLink": "https://github.com/SabinaCristea/pomodoro-app",
       "siteLink": "https://pomodoro-app-sabina.netlify.app/",
       "description": "The Pomodoro App is a timer application that allows users to set Pomodoro, short break, and long break timers, with customization options for each timer's duration. It features a circular progress bar that updates every minute to show the timer's progress and offers customizable appearance settings for colors and fonts. Built with Vite, React and Tailwind CSS, this project ensures a responsive and user-friendly experience across all devices, adhering closely to the provided design specifications."
     },
     {
-      "src": "/assets/imgs/project-clock.png",
+      "src": "/assets/imgs/project-clock.webp",
       "alt": "Project Clock App",
       "codeLink": "https://github.com/SabinaCristea/clock-app",
       "siteLink": "https://clock-app-sabina.netlify.app/",
