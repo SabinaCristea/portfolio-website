@@ -26,6 +26,8 @@ function ProjectsCarousel() {
     "var( --color-project-3)",
     "var( --color-project-4)",
     "var( --color-project-5)",
+    "var( --color-project-6)",
+    "var( --color-project-7)",
   ];
 
   function handleDetailsBtnClick() {

@@ -5,7 +5,7 @@
       "srcTab": "/assets/imgs/skill-react-tab.webp",
       "alt": "React skill",
       "name": "React",
-      "details": "From crafting components to managing states, I bring web dreams to life with ease, whether it's routing with React Router, fetching data with React Query, or diving into Redux."
+      "details": "From crafting components to managing states, I bring web dreams to life with ease, whether it's routing with React Router, fetching data with React Query, integrating PrimeReact for rich UI components, or diving into Redux."
     },
     {
       "src": "/assets/imgs/skill-typescript.webp",
@@ -19,21 +19,21 @@
       "srcTab": "/assets/imgs/skill-styling-tab.webp",
       "alt": "CSS skill",
       "name": "CSS Approaches",
-      "details": "From organizing styles with CSS Modules to enhancing flexibility with Sass, seamlessly integrating styles and components with styled-components, and crafting efficient designs with Tailwind CSS – my CSS journey is a dynamic blend of techniques and creativity!"
+      "details": "From organizing styles with CSS Modules to enhancing flexibility with SASS, seamlessly integrating styles and components with styled-components, and crafting efficient designs with Tailwind CSS – my CSS journey is a dynamic blend of techniques and creativity!"
     },
     {
       "src": "/assets/imgs/skill-cicd.webp",
       "srcTab": "/assets/imgs/skill-cicd-tab.webp",
       "alt": "CI/CD skill",
       "name": "CI/CD",
-      "details": "Proficient in CI/CD, Git (GitHub/Bitbucket), and Agile, I streamline software development with automated processes, ensuring rapid delivery of high-quality code."
+      "details": "Proficient in Git (GitHub/Bitbucket/GitLab), CI/CD and Agile, I streamline software development with automated processes, ensuring rapid delivery of high-quality code."
     },
     {
       "src": "/assets/imgs/skill-database.webp",
       "srcTab": "/assets/imgs/skill-database-tab.webp",
       "alt": "Database skill",
       "name": "Database",
-      "details": "To power my applications, Supabase and MySQL are my go-to solutions. With Supabase's flexibility and MySQL's reliability, I ensure seamless support for all my projects."
+      "details": "To power my applications, Supabase and MS-SQL are my go-to solutions. With Supabase's flexibility and MS-SQL's reliability, I ensure seamless support for all my projects."
     },
     {
       "src": "/assets/imgs/skill-ui.webp",
@@ -123,6 +123,20 @@
       "codeLink": "https://github.com/SabinaCristea/fast-react-pizza",
       "siteLink": "https://react-pizza-sabina.netlify.app/",
       "description": "A dynamic pizza ordering application developed with React, Redux, Vite, and Tailwind CSS. Browse through a diverse selection of pizzas, add items to your basket, and effortlessly modify quantities. Utilizing APIs for geocoding and pizza listings, the app enhances user convenience. Receive a unique order number and access order history by searching with the order number. Seamlessly place orders through a comprehensive form, with the option to prioritize orders, adjusting pricing and delivery time accordingly."
+    },
+    {
+      "src": "/assets/imgs/project-pomodoro.png",
+      "alt": "Project Pomodoro",
+      "codeLink": "https://github.com/SabinaCristea/pomodoro-app",
+      "siteLink": "https://pomodoro-app-sabina.netlify.app/",
+      "description": "The Pomodoro App is a timer application that allows users to set Pomodoro, short break, and long break timers, with customization options for each timer's duration. It features a circular progress bar that updates every minute to show the timer's progress and offers customizable appearance settings for colors and fonts. Built with Vite, React and Tailwind CSS, this project ensures a responsive and user-friendly experience across all devices, adhering closely to the provided design specifications."
+    },
+    {
+      "src": "/assets/imgs/project-clock.png",
+      "alt": "Project Clock App",
+      "codeLink": "https://github.com/SabinaCristea/clock-app",
+      "siteLink": "https://clock-app-sabina.netlify.app/",
+      "description": "The Clock Application is a dynamic web app that displays the current time and location based on the visitor's IP address. It offers additional date and time details, a greeting and background image based on the time of day, and generates random programming quotes. Featuring a responsive design and interactive hover states, it ensures an optimal user experience across devices. Built with Vite, React, Tailwind CSS, and external APIs for location and quotes, this project delivers a comprehensive and engaging user interface."
     }
   ]
 }

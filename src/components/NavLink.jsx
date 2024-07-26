@@ -17,7 +17,9 @@ function NavLink({
       className={`${navLinkStyle} ${location.pathname === `/${pathName}` ? styles.active : ""}`}
       onClick={() => {
         handleClick(`/${pathName}`);
-        onclose();
+        if (onclose) {
+          onclose();
+        }
       }}
     >
       {children}
