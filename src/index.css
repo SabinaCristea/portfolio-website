@@ -20,11 +20,13 @@
   --color-black: #0a0b0a;
   --color-project-1: #5d69a5;
   --color-project-2: #bcb2c2;
-  --color-project-3: #fbd3ad;
-  --color-project-4: #a87f96;
-  --color-project-5: #639ac8;
-  --color-project-6: #dfb498;
-  --color-project-7: #456789;
+  /* --color-project-3: #456789; */
+  --color-project-3: #3b4d3f;
+  --color-project-4: #fbd3ad;
+  --color-project-5: #a87f96;
+  --color-project-6: #639ac8;
+  --color-project-7: #dfb498;
+  --color-project-8: #456789;
 }
 
 *,

@@ -104,6 +104,13 @@
       "description": "An all-inclusive hotel management application designed for employees, featuring robust authentication, reservation management (booking, updating, and deleting reservation), dark mode for comfortable usage, and intuitive sorting and filtering of information. Developed as part of the Ultimate React course by Jonas Schmedtmann, utilizing React Router, Styled Components, Vite, Context API, React Query, Recharts, Supabase, and other tools."
     },
     {
+      "src": "/assets/imgs/project-wild-oasis-next.webp",
+      "alt": "Project Wild Oasis Next",
+      "codeLink": "https://github.com/SabinaCristea/wild-oasis-nextjs",
+      "siteLink": "https://wild-oasis-nextjs-six.vercel.app/",
+      "description": "Cabin Reservation Platform built using Next.js, designed to provide users with a seamless experience for reserving cabins. The platform integrates with Google Authentication for secure user sign-in and utilizes Supabase as its database backend for efficient data management."
+    },
+    {
       "src": "/assets/imgs/project-worldwise.webp",
       "alt": "Project WorldWise",
       "codeLink": "https://github.com/SabinaCristea/worldwise",
